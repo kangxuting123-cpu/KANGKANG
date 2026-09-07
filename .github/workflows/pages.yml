@@ -27,7 +27,8 @@ jobs:
           wget --mirror --page-requisites --convert-links --adjust-extension --no-parent \
             --execute robots=off \
             --directory-prefix mirror \
-            "https://kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/"
+            "https://kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/" || true
+          test -f mirror/kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/index.html
           cp -a mirror/kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/. public/
           touch public/.nojekyll
       - name: Configure Pages
