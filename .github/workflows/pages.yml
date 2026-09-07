@@ -1,0 +1,41 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror portfolio
+        run: |
+          mkdir -p public
+          wget --mirror --page-requisites --convert-links --adjust-extension --no-parent \
+            --execute robots=off \
+            --directory-prefix mirror \
+            "https://kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/"
+          cp -a mirror/kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/. public/
+          touch public/.nojekyll
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
