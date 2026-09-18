@@ -1,0 +1,16 @@
+{
+  "name": "Kanggg Portfolio",
+  "short_name": "Kanggg",
+  "description": "AI effects, illustration, VFX, and visual design portfolio.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

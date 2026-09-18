@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanggg | AI Effects & Visual Designer</title>
+    <meta
+      name="description"
+      content="Kanggg 的个人简历与作品集网站，展示插画、传统特效、AI 特效、视觉设计与团队项目经验。"
+    />
+    <meta name="theme-color" content="#090909" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kanggg | AI Effects & Visual Designer" />
+    <meta property="og:description" content="插画、传统特效、AI 特效与视觉设计作品集。" />
+    <meta property="og:image" content="./media/social-cover.jpg" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kanggg | AI Effects & Visual Designer" />
+    <meta name="twitter:description" content="插画、传统特效、AI 特效与视觉设计作品集。" />
+    <meta name="twitter:image" content="./media/social-cover.jpg" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./layout-fixes.css" />
+  <link rel="stylesheet" href="./illustration-background.css">
+</head>
+  <body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <div class="top-beam"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">KANGKANG</a>
+      <a class="aigc-module-back detail-header-back" href="#projects" aria-label="Back to UI and branding projects">
+        <span aria-hidden="true">←</span>
+        <small>ALL PROJECTS</small>
+      </a>
+      <nav class="site-nav">
+        <a class="doodle-nav doodle-nav-about" href="#about" aria-label="关于" data-label="关于">
+          <svg class="nav-sketch nav-sketch-girl" viewBox="0 0 72 56" aria-hidden="true"><path d="M27 8C22 2 14 4 11 10c-2 4-1 7-5 11-4 4-5 10-2 14 3 4 7 5 13 3-1 5 2 9 7 10 5 1 10-1 13-5"/><path d="M24 13c6-6 19-7 27-2 5 3 5 8 1 10-2 1-5 1-8 0 2-3 2-6 1-8-1 5-3 8-7 9 2-3 2-6 1-9-1 5-3 8-7 9 1-3 1-6 0-8-1 4-3 7-7 8-5 1-8-4-1-9Z"/><path d="M24 21v8c-4-1-7 1-7 4 0 4 4 5 8 3 2 7 8 11 17 11 11 0 18-6 19-15 4 2 7 0 7-3 0-3-3-5-6-3v-7"/><path d="M34 29v4M50 29v4M38 39c3 2 7 2 10 0"/><path class="cheek" d="M29 36h3M53 36h3"/></svg>
+        </a>
+        <a class="doodle-nav doodle-nav-work" href="#projects" aria-label="工作" data-label="工作">
+          <svg class="nav-sketch nav-sketch-computer" viewBox="0 0 76 58" aria-hidden="true"><path d="M10 5c14-3 32-3 46 0 1 9 1 19 0 28-14 2-32 2-46 0-1-9-1-19 0-28Z"/><path d="M14 9c12-2 26-2 38 0v20c-12 1-26 1-38 0V9ZM29 35v7m8-7v7"/><path d="M17 41c13-1 27-1 40 0l7 13c-18 1-37 1-55 0l8-13Z"/><path class="keyboard-lines" d="M21 45h31M18 49h38M25 43l-3 9m10-9-2 9m9-9v9m8-9 2 9"/><path d="M63 42c6 0 9 4 9 8s-3 7-7 7M66 46c-2 1-2 3 0 4"/></svg>
+        </a>
+        <a class="doodle-nav doodle-nav-contact" href="#contact" aria-label="联系" data-label="联系">
+          <svg class="nav-sketch nav-sketch-envelope" viewBox="0 0 68 56" aria-hidden="true"><path d="M7 8c17-1 36-1 54 0 1 13 1 27 0 40-18 1-37 1-54 0C6 35 6 21 7 8Z"/><path d="M9 11c8 9 17 18 25 25 8-7 17-16 25-25M9 46l17-18m33 18L42 28"/><path class="envelope-heart" d="M29 20c0-4 5-5 6-1 2-4 7-3 7 1 0 4-4 7-7 10-3-3-6-6-6-10Z"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section route-section route-home">
+        <div class="home-intro reveal">
+          <div class="home-window-control" data-home-shade aria-label="飞机舷窗明暗模式控制">
+            <div class="window-drag-hint" aria-hidden="true">
+              <span class="window-mode-sun">🌞</span>
+              <span class="window-mode-moon">🌛</span>
+            </div>
+            <div class="airplane-window">
+              <div class="airplane-window-view"><span></span></div>
+              <div class="airplane-window-shade"></div>
+              <button class="airplane-window-handle" type="button" aria-pressed="false" aria-label="拉下遮光板切换黑色背景"><span></span></button>
+            </div>
+            <small><span>LIGHT</span><span>DARK</span></small>
+          </div>
+          <div class="home-intro-copy">
+            <h1 class="home-intro-title">
+              <span class="home-title-clean">不只是好看，</span>
+              <span class="home-title-accent">也可以好玩。</span>
+            </h1>
+            <p class="home-intro-lead">
+现在专注于 AIGC 视觉创作，从特效、插画到交互界面，让每一个想法真正动起来、用起来。
+            </p>
+            <p class="home-intro-note">继续往下，看看它们最后变成了什么。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro-grid route-section route-about">
+        <div class="section-heading about-profile reveal">
+          <div class="about-profile-copy">
+            <p class="eyebrow">关于我</p>
+            <h2 class="about-title"><span>嗨，我是康康。</span><span>我把脑洞做成画面。</span></h2>
+            <div class="about-story">
+              <p>现在在字节跳动做 AIGC 效果设计，主要负责人像风格化、视频生成和平台玩法。很多效果不只停在提案里，已经真正上线，被用户玩起来了。</p>
+              <p>我也做过课程插画、角色设定、App 视觉、贴纸和道具特效。比起单纯把图做漂亮，我更在意一个想法能不能被看懂、被使用，也被记住。</p>
+            </div>
+          </div>
+          <figure class="about-profile-photo">
+            <img src="./media/about-kangkang-museum.jpg" alt="康康在美术馆创作" />
+          </figure>
+        </div>
+
+        <div class="intro-panels intro-panels-about">
+          <article class="panel panel-education reveal">
+            <p class="panel-kicker">01 / EDUCATION</p>
+            <h3>Education</h3>
+            <article class="education-card">
+              <div class="work-head">
+                <p class="about-meta">中国传媒大学</p>
+                <span>2018届</span>
+              </div>
+            </article>
+          </article>
+
+          <article class="panel panel-work reveal">
+            <p class="panel-kicker">02 / EXPERIENCE</p>
+            <h3>Experience</h3>
+            <div class="work-stack">
+              <article class="work-item">
+                <div class="work-head">
+                  <p class="about-meta">网易</p>
+                  <span>2017.03 — 2017.07</span>
+                </div>
+                <p class="about-meta-sub">平面设计（实习）</p>
+                <p>
+                  在实习阶段参与部门平面设计相关工作，完成基础视觉物料输出，
+                  也在这段经历里建立了最初的执行能力与团队协作节奏。
+                </p>
+              </article>
+
+              <article class="work-item">
+                <div class="work-head">
+                  <p class="about-meta">完美世界</p>
+                  <span>2018.08 — 2020.07</span>
+                </div>
+                <p class="about-meta-sub">视觉设计</p>
+                <p>
+                  负责洪恩故事 App 的线上封面、长封面 Banner、启动页与详情页视觉设计，
+                  同时参与洪恩识字前期画面调整与界面 UI 互动设计。
+                </p>
+              </article>
+
+              <article class="work-item work-item-wide">
+                <div class="work-head">
+                  <p class="about-meta">字节跳动</p>
+                  <span>2020.08 — 2021.12</span>
+                </div>
+                <p class="about-meta-sub">瓜瓜龙插画设计</p>
+                <p>
+                  负责瓜瓜龙英语课程、编程课、美术课的场景设定与角色插画，
+                  参与课程整体视觉风格搭建与内容绘制。
+                </p>
+              </article>
+
+              <article class="work-item work-item-wide">
+                <div class="work-head">
+                  <p class="about-meta">字节跳动</p>
+                  <span>2022.04 — 至今</span>
+                </div>
+                <p class="about-meta-sub">传统特效 / AI 特效设计师</p>
+                <p>
+</p>
+                <ul class="work-points">
+                  <li>独立完成风格化、人像、视频等多类型 AI 特效设计，参与 Checkpoint、LoRA 等模型训练与效果调试</li>
+                  <li>参与图像与视频生成大模型的视觉体系搭建，协同 PM 与算法制定美学标准并跟进最终效果验收</li>
+                  <li>探索 AIGC 创新应用并落地多个 0 到 1 项目，参与 TikTok Remix 跟拍与 Agent 玩法设计</li>
+                  <li>梳理各类立项、验收、脑暴与分享类文档，沉淀项目经验与设计标准</li>
+                </ul>
+              </article>
+            </div>
+          </article>
+
+          <article class="panel panel-toolkit reveal">
+            <p class="panel-kicker">03 / TOOLKIT</p>
+            <h3>PS / AI / Figma / AE / ComfyUI / C4D</h3>
+          </article>
+
+        </div>
+      </section>
+
+            <section id="projects" class="section project-hub-section route-section route-projects">
+        <div class="project-hub-shell reveal">
+          <div class="project-hub-grid" aria-label="Project categories">
+            <a class="project-hub-item project-hub-video project-hub-featured" href="#projects-effects" aria-label="打开 AI 板块">
+              <span class="project-hub-media project-hub-doodle-demo" aria-label="TikTok Doodle 特效使用流程演示">
+                <span class="project-hub-doodle-copy">
+                  <small>AIGC CREATION</small>
+                  <strong>生成式视觉</strong>
+                  <em>从风格化图像、人像塑造到视频生成，把模型能力转化为可使用、可分享的视觉体验。</em>
+                </span>
+                <span class="project-hub-enter" aria-hidden="true"><b>→</b></span>
+                <span class="doodle-phone project-hub-demo-phone">
+                  <span class="doodle-phone-top"><span>9:41</span><i></i><span>● ●</span></span>
+                  <span class="doodle-screen doodle-screen-effect"><span class="doodle-tiktok-bar"><b>TikTok</b><span>×</span></span><span class="doodle-effect-icon">D</span><strong>Doodle Me</strong><small>Turn your photo into a hand-drawn world</small><span class="doodle-demo-button">Use this effect</span></span>
+                  <span class="doodle-screen doodle-screen-upload"><span class="doodle-tiktok-bar"><b>Doodle Me</b><span>×</span></span><span class="doodle-upload-box"><span class="doodle-upload-preview"><img class="doodle-preview-original" src="./media/doodle-demo/original.png" alt="待上传照片" /><img class="doodle-preview-result" src="./media/doodle-demo/result.png" alt="Doodle 生成结果" /><i class="doodle-preview-spinner"></i></span><strong>Select from album</strong><small>Tap to upload your photo</small></span><span class="doodle-demo-button">Upload photo</span></span>
+                  <span class="doodle-screen doodle-screen-source"><img src="./media/doodle-demo/original.png" alt="用户上传原图" /><span class="doodle-source-action"><span>Photo selected</span><b>Generate</b></span></span>
+                  <span class="doodle-screen doodle-screen-loading"><img class="doodle-generating-source" src="./media/doodle-demo/original.png" alt="生成前原图" /><img class="doodle-generating-result" src="./media/doodle-demo/result.png" alt="正在生成的 Doodle 结果" /><span class="doodle-scan-line"></span><span class="doodle-loading-mask"><i></i><strong>Creating Doodle</strong><small>Applying style</small></span></span>
+                  <span class="doodle-screen doodle-screen-result"><img src="./media/doodle-demo/result.png" alt="Doodle 风格化结果" /><span class="doodle-result-bar"><span>Try another</span><b>Post</b></span></span>
+                  <span class="doodle-tap"></span>
+                </span>
+              </span>
+              <span class="project-hub-meta">
+                <span class="project-hub-title">AIGC</span>
+                <span class="project-hub-tags"><span>图像生成</span><span>视频生成</span><span>人像风格化</span></span>
+              </span>
+              <span class="project-hub-desc">结合模型能力与视觉判断，探索图像、视频、人像风格化与 AIGC 平台玩法。</span>
+            </a>
+            <a class="project-hub-item project-hub-traditional" href="#projects-effects-archive" aria-label="打开传统特效">
+              <span class="project-hub-media traditional-live-lab">
+                <span class="live-lab-top"><img class="live-lab-logo" src="./media/tiktok-live-logo.png" alt="TikTok LIVE" /><small>ON AIR · 2.8K</small></span>
+                <span class="live-lab-stage">
+                  <span class="live-lab-rings"><i></i><i></i><i></i></span>
+                  <span class="live-lab-hosts"><i class="host-a"><img src="./media/portrait-scroll/portrait-scroll-01.png" alt="虚拟主播 A" /></i><small>PK</small><i class="host-b"><img src="./media/portrait-scroll/portrait-scroll-04.png" alt="虚拟主播 B" /></i></span>
+                  <span class="live-lab-status"><small>LIVE CAMERA PREVIEW</small><b>PORTRAIT<br />EFFECT</b></span>
+                </span>
+                <span class="live-preview-gift live-lab-gift"><i>✦</i><span><b>mika sent a Universe</b><small>礼物光效已触发</small></span><strong>×1</strong></span>
+                <span class="live-preview-chat live-lab-chat"><span><b>nora</b> the effect follows them!</span><span><b>alex</b> tap to switch the scene 👀</span><span><b>luna</b> the gift effect is live ✨</span></span>
+                <span class="live-preview-actions live-lab-actions"><i>♥<small>18K</small></i><i>✦<small>Gift</small></i></span>
+                <span class="live-preview-hearts live-lab-hearts"><i>♥</i><i>♥</i><i>♥</i><i>♥</i></span>
+                <span class="live-lab-triggers"><i><small>01</small><b>✦</b><span>GIFT GLOW</span></i><i><small>02</small><b>◎</b><span>TAP TO SWITCH</span></i><i><small>03</small><b>↝</b><span>MOTION FOLLOW</span></i></span>
+                <span class="live-lab-footer"><span>3 LIVE TRIGGERS CONNECTED</span><i></i><b>REAL-TIME</b></span>
+              </span>
+              <span class="project-hub-meta">
+                <span class="project-hub-title">Traditional Effects</span>
+                <span class="project-hub-tags"><span>贴纸</span><span>道具</span><span>互动玩法</span></span>
+              </span>
+              <span class="project-hub-desc">围绕人像、贴纸、道具与互动机制，完成可上线、可传播的传统特效体验。</span>
+            </a>
+            <a class="project-hub-item project-hub-effects" href="#projects-graphic" aria-label="打开插画板块">
+              <span class="project-hub-media"><img src="./media/guagua-feature/guagua-06.png" alt="Illustration project preview" /></span>
+              <span class="project-hub-meta">
+                <span class="project-hub-title">Illustration</span>
+                <span class="project-hub-tags"><span>角色</span><span>场景</span><span>课程插画</span></span>
+              </span>
+              <span class="project-hub-desc">从角色设定、课程插画到品牌视觉，建立统一且具有叙事感的画面语言。</span>
+            </a>
+            <a class="project-hub-item project-hub-graphic" href="#projects-video" aria-label="打开 UI 板块">
+              <span class="project-hub-media project-hub-ui-preview" aria-hidden="true">
+                <span class="ui-preview-toolbar"><i></i><i></i><i></i><b>studio / dashboard</b></span>
+                <span class="ui-preview-shell">
+                  <span class="ui-preview-sidebar"><b>STUDIO</b><i></i><i></i><i></i><i></i></span>
+                  <span class="ui-preview-main">
+                    <span class="ui-preview-heading"><small>CREATIVE LIBRARY</small><b>Campaign workspace</b><em>+ New project</em></span>
+                    <span class="ui-preview-stats"><i><small>Active</small><b>12</b></i><i><small>Review</small><b>04</b></i><i><small>Published</small><b>28</b></i></span>
+                    <span class="ui-preview-grid"><i><b>Visual system</b><small>Brand kit · 84%</small></i><i><b>Motion launch</b><small>In review · 06</small></i></span>
+                  </span>
+                </span>
+              </span>
+              <span class="project-hub-meta">
+                <span class="project-hub-title">UI &amp; Branding</span>
+                <span class="project-hub-tags"><span>界面设计</span><span>交互体验</span><span>视觉系统</span></span>
+              </span>
+              <span class="project-hub-desc">围绕产品界面、操作流程与信息层级，完成兼顾效率和视觉一致性的体验设计。</span>
+            </a>
+            <a class="project-hub-item project-hub-vibecoding" href="#projects-vibecoding" aria-label="打开 Vibe Coding 项目集">
+              <span class="project-hub-media project-hub-code-preview" aria-hidden="true">
+                <span class="vibe-cover-brand"><b>VIBE / LAB</b><small>04 PROJECTS · READY</small></span>
+                <span class="vibe-cover-question">Any small idea<br />you want to <em>make real?</em></span>
+                <span class="vibe-cover-prompt"><small>Ask AI to build a playful idea...</small><i>WEB</i><i>MOBILE</i><b>START ↗</b></span>
+                <span class="vibe-cover-feature"><i></i><strong>From one prompt<br />to a working product.</strong><small>IDEA → DESIGN → SHIP</small></span>
+                <span class="vibe-cover-templates"><b>START FROM A PROJECT</b><span><i>01</i><strong>TRUE<br />SELF</strong></span><span><i>02</i><strong>BATCH<br />BOX</strong></span><span><i>03</i><strong>FIT<br />LAB</strong></span><span><i>04</i><strong>NOCT<br />URNE</strong></span></span>
+              </span>
+              <span class="project-hub-meta">
+                <span class="project-hub-title">Vibe Coding</span>
+                <span class="project-hub-tags"><span>AI 协作</span><span>原型开发</span><span>快速上线</span></span>
+              </span>
+              <span class="project-hub-desc">把创意、界面与代码快速连接，完成从概念原型到可体验产品的完整落地。</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-vibecoding" class="section route-section route-vibecoding vibe-archive-section">
+        <div class="vibe-archive-shell">
+          <a class="aigc-module-back vibe-projects-back" href="#projects" aria-label="返回全部作品">
+            <span aria-hidden="true">←</span>
+            <small>ALL PROJECTS</small>
+          </a>
+          <header class="vibe-archive-header reveal">
+            <div class="vibe-archive-kicker"><i>VIBE CODING / ARCHIVE</i><span>04 SELECTED PROJECTS · 2026</span></div>
+            <div class="vibe-editorial-hero">
+              <div class="vibe-editorial-copy"><small>PROJECT INDEX</small><h1>VIBE<br /><em>ARCHIVE</em></h1><p>记录四个从想法到可体验产品的实验：游戏、效率工具、穿搭应用与音乐界面。</p></div>
+              <div class="vibe-archive-map" aria-hidden="true">
+                <span class="archive-node node-a"><i></i>TRUE SELF<small>INTERACTIVE GAME</small></span>
+                <span class="archive-node node-b"><i></i>BATCH BOX<small>WORK PLUGIN</small></span>
+                <span class="archive-node node-c"><i></i>FIT LAB<small>FASHION APP</small></span>
+                <span class="archive-node node-d"><i></i>NOCTURNE<small>MUSIC PRODUCT</small></span>
+                <div class="vibe-waveform"></div>
+                <b class="vibe-archive-view">VIEW ALL PROJECTS</b>
+              </div>
+            </div>
+          </header>
+
+          <div class="vibe-project-index reveal">
+            <article class="vibe-project-card vibe-project-card-game">
+              <div class="vibe-project-meta"><span>01</span><small>INTERACTIVE GAME</small><i>LIVE</i></div>
+              <div class="vibe-project-copy">
+                <p>PLAYFUL PERSONALITY TEST</p>
+                <h2 class="vibe-game-title"><span>你的真实形态</span><br />是什么？</h2>
+                <span>随便选选，看看最后会被判定成什么奇怪东西。</span>
+                <div class="vibe-project-tags"><b>10 QUESTIONS</b><b>6 IDENTITIES</b><b>2 MIN</b></div>
+              </div>
+              <a class="vibe-visual-stage vibe-visual-stage-game vibe-game-entry" href="./vibe-game/" target="_blank" rel="noopener" aria-label="进入你的真实形态测试游戏">
+                <div class="vibe-solid-copy"><small>LIVE PROJECT / READY TO PLAY</small><strong>ENTER THE<br />GAME ↗</strong><span>10 QUESTIONS · 6 IDENTITIES · 2 MIN</span></div>
+              </a>
+            </article>
+
+            <article class="vibe-project-card">
+              <div class="vibe-project-meta"><span>02</span><small>WORK PLUGIN</small><i>PROTOTYPE</i></div>
+              <div class="vibe-project-copy"><p>FEISHU UTILITY PLUGIN</p><h2>Batch<br />Box.</h2><span>把群聊、文档和云空间里的图片、视频与文件，一次筛选、整理并批量下载。</span><div class="vibe-project-tags"><b>BULK DOWNLOAD</b><b>AUTO ORGANIZE</b><b>ORIGINAL QUALITY</b></div></div>
+              <a class="vibe-visual-stage vibe-visual-stage-final vibe-game-entry" href="./batch-box/" target="_blank" rel="noopener" aria-label="进入 BatchBox 飞书批量下载插件演示">
+                <div class="vibe-solid-copy final-cover-copy"><small>LIVE PROTOTYPE / FEISHU PLUGIN</small><strong>SELECT.<br />PACK.<br />DOWNLOAD.</strong><span>OPEN THE PLUGIN</span></div>
+              </a>
+            </article>
+
+            <article class="vibe-project-card vibe-project-card-fitlab">
+              <div class="vibe-project-meta"><span>03</span><small>FASHION APP</small><i>PLAYABLE</i></div>
+              <div class="vibe-project-copy">
+                <p>INTERACTIVE OUTFIT STYLIST</p>
+                <h2>FIT<br />LAB.</h2>
+                <span>把衣橱变成可玩的搭配实验室。选择单品、即时试穿，也可以让灵感帮你随机配一套。</span>
+                <div class="vibe-project-tags"><b>MIX &amp; MATCH</b><b>LIVE PREVIEW</b><b>STYLE SHUFFLE</b></div>
+              </div>
+              <a class="vibe-visual-stage fitlab-cover" href="./fit-lab/" target="_blank" rel="noopener" aria-label="进入 FIT LAB 真实穿搭搭配应用">
+                <div class="fitlab-cover-grid" aria-hidden="true"><img src="./fit-lab/assets/look-sport.jpg" alt="" /></div>
+                <div class="fitlab-cover-ui">
+                  <span>WARDROBE / AI STYLIST</span>
+                  <strong>FIT<br />LAB.</strong>
+                  <small>BUILD A LOOK · 01—06</small>
+                </div>
+                <div class="fitlab-cover-action">OPEN APP <b>↗</b></div>
+              </a>
+            </article>
+
+            <article class="vibe-project-card vibe-project-card-music">
+              <div class="vibe-project-meta"><span>04</span><small>GLOBAL MUSIC APP</small><i>INTERACTIVE</i></div>
+              <div class="vibe-project-copy">
+                <p>NOCTURNE / GLOBAL MUSIC EXPERIENCE</p>
+                <h2>Sound,<br />without borders.</h2>
+                <span>为国际音乐产品建立统一而有情绪的主视觉系统，覆盖音乐发现、沉浸播放器与动态歌词，让不同文化背景的用户都能快速进入声音。</span>
+                <div class="vibe-project-tags"><b>DISCOVERY</b><b>PLAYER</b><b>LYRICS</b><b>GLOBAL MOODS</b></div>
+              </div>
+              <a class="vibe-visual-stage music-cover-stage" href="./music-lab/" target="_blank" rel="noopener" aria-label="进入 NOCTURNE 国际音乐应用视觉原型">
+                <div class="music-cover-editorial"><small>04 / MUSIC PRODUCT</small><strong>SOUND<br />WITHOUT<br />BORDERS.</strong><span>DISCOVERY · PLAYER · LYRICS</span></div>
+                <div class="music-cover-device" aria-hidden="true"><b>✳ nocturne.fm</b><div class="music-cover-toolbar"><span>Night mood⌄</span><i>⌕　⋮</i></div><div class="music-cover-vinyl"><i>N°</i></div><div class="music-cover-track"><small>Mexican Hero<br /><em>Marzauros</em></small><b>♡</b></div><div class="music-cover-progress"><i></i></div><div class="music-cover-time"><span>1:22</span><span>3:03</span></div><div class="music-cover-controls">Ⅰ◀　 ▶　 ▶Ⅰ</div><div class="music-cover-dock">↻　 ▣　 ◔　 ♫</div></div>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-overview" class="section projects-section route-section route-project-detail route-graphic">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FEATURED WORK</p>
+          <h2>
+            <span>Work chapters,</span>
+            <span>ready to</span>
+            <span>unfold.</span>
+          </h2>
+        </div>
+
+        <div class="project-showcase reveal">
+          <article class="project-board project-board-ai project-board-effects-summary">
+            <div class="project-icon-grid project-icon-grid-scroll">
+              <div class="ai-scroll-column ai-scroll-up">
+                <div class="ai-scroll-track">
+                  <div class="project-image-card"><img src="./media/ai-grid/icon-template-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-1.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden2-1.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/stacked-22.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden4.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/icon-template-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-1.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden2-1.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/stacked-22.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden4.png" alt="AI effect style showcase" /></div>
+                </div>
+              </div>
+              <div class="ai-scroll-column ai-scroll-down">
+                <div class="ai-scroll-track">
+                  <div class="project-image-card"><img src="./media/ai-grid/image-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden4.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/ghibli-4433.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/bg-image.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/image-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden4.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/ghibli-4433.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/bg-image.png" alt="AI effect style showcase" /></div>
+                </div>
+              </div>
+              <div class="ai-scroll-column ai-scroll-up">
+                <div class="ai-scroll-track">
+                  <div class="project-image-card"><img src="./media/ai-grid/icon-template.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-3.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden-6.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/bg-image.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/image-2.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/icon-template.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/vintage-poster-3.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/wooden-6.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/bg-image.png" alt="AI effect style showcase" /></div>
+                  <div class="project-image-card"><img src="./media/ai-grid/image-2.png" alt="AI effect style showcase" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-metric">
+              <strong>60+</strong>
+              <span>AI 特效创作与落地</span>
+              <em>全球 SS 级 / S 级 / A 级爆款累计 10+，内容带动规模性跟拍</em>
+            </div>
+          </article>
+
+          <article class="project-board project-board-fx project-board-effects-summary">
+            <div class="project-icon-grid project-icon-grid-fx-images">
+              <div class="fx-scroll-column fx-scroll-up">
+                <div class="fx-scroll-track">
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/hand-swipe-distort.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/sparkle-poop.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/woodpecker.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/puppet.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/hand-swipe-distort.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/sparkle-poop.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/woodpecker.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/puppet.png" alt="Traditional effect icon" /></div>
+                </div>
+              </div>
+              <div class="fx-scroll-column fx-scroll-down">
+                <div class="fx-scroll-track">
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/green-screen.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/maquiagem-junina.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/tilt.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/cat-on-shoulder.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/green-screen.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/maquiagem-junina.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/tilt.png" alt="Traditional effect icon" /></div>
+                  <div class="fx-scroll-card"><img src="./media/fx-icons/cat-on-shoulder.png" alt="Traditional effect icon" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-metric">
+              <strong>70+</strong>
+              <span>负责传统特效设计</span>
+              <em>完成贴纸、互动道具与模板类效果设计，覆盖多类创作场景</em>
+            </div>
+          </article>
+
+          <article class="project-board project-board-illustration project-board-graphic-summary">
+            <div class="project-icon-grid project-icon-grid-image project-icon-grid-guagua">
+
+              <div class="guagua-scroll-column guagua-scroll-up">
+                <div class="guagua-scroll-track">
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                </div>
+              </div>
+
+              <div class="guagua-scroll-column guagua-scroll-down">
+                <div class="guagua-scroll-track">
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                </div>
+              </div>
+
+              <div class="guagua-scroll-column guagua-scroll-up">
+                <div class="guagua-scroll-track">
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-06.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-01.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-05.jpg" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-08.png" alt="Guagua illustration work" /></div>
+                  <div class="guagua-scroll-card"><img src="./media/guagua-scroll/guagua-07.jpg" alt="Guagua illustration work" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-metric">
+              <strong>100+</strong>
+              <span>课程视觉搭建与绘制</span>
+              <em>瓜瓜龙一年时间做到行业第一</em>
+            </div>
+          </article>
+
+          <article class="project-board project-board-illustration project-board-perfect project-board-graphic-summary">
+            <div class="project-icon-grid project-hongen-marquee" aria-label="洪恩故事作品滚动展示">
+              <div class="hongen-scroll-column hongen-scroll-up">
+                <div class="hongen-scroll-track">
+                  <figure><img src="./media/hongen-showcase/hongen-01.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-02.png" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-03.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-04.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-05.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-01.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-02.png" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-03.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-04.jpg" alt="洪恩故事设计展示" /></figure>
+                  <figure><img src="./media/hongen-showcase/hongen-05.jpg" alt="洪恩故事设计展示" /></figure>
+                </div>
+              </div>
+            </div>
+            <div class="project-metric">
+              <strong>100+</strong>
+              <span>负责洪恩故事设计</span>
+              <em>参与洪恩识字前期画面调整与界面 UI 互动设计</em>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-video" class="section brand-template-section route-section route-project-detail route-video" aria-label="UI and branding project">
+        <div class="aigc-module-shell">
+          <article class="aigc-module-card reveal">
+            <div class="aigc-module-media aigc-module-media-wide">
+              <img src="./media/text-template/frame-141-text-template.png" alt="图文模板设计系统" />
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">01 / BRAND SYSTEM</p>
+              <h2>图文模板系统</h2>
+              <p class="aigc-module-meta">Visual Templates · 2025</p>
+              <p>整理字体、颜色、排版与装饰规则，让图文模板既有统一视觉，也能被持续复用。</p>
+              <dl>
+                <div><dt>系统</dt><dd>字体、配色、构图与装饰规范</dd></div>
+                <div><dt>价值</dt><dd>提升模板生产效率与一致性</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="aigc-module-card brand-kang11-card reveal">
+            <div class="aigc-module-media aigc-module-media-wide brand-kang11-media">
+              <div class="one-one-brand-gallery one-one-handmade-gallery" aria-label="ONEONE Coffee handmade brand identity applications">
+                <figure data-scene="Brand identity"><img src="./media/oneone-geometric/oneone-handmade-system.png" alt="ONEONE 咖啡手作品牌视觉与包装系统" /></figure>
+              </div>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">02 / BRAND IDENTITY</p>
+              <h2>ONEONE Coffee</h2>
+              <p class="aigc-module-meta">Brand Identity · 2026</p>
+              <p>A tactile coffee identity combining real brewing moments, hand-drawn marks and a warm material system led by cobalt blue.</p>
+              <dl>
+                <div><dt>System</dt><dd>Wordmark, hand-drawn symbols, photography, color and material</dd></div>
+                <div><dt>Use</dt><dd>Coffee bags, cups, menus, cards and café touchpoints</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="aigc-module-card postcard-system-card reveal">
+            <div class="aigc-module-media aigc-module-media-wide postcard-system-media">
+              <img src="./media/postcard-system/postcard-system-hero.png" alt="给明天的天气留言原创明信片视觉系统" />
+              <div class="postcard-system-label"><small>POSTCARD SERIES / 01—06</small><strong>Forecasts<br />for Tomorrow.</strong></div>
+              <span class="postcard-system-seal">PRINT<br />MATTERS</span>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">03 / EDITORIAL DESIGN</p>
+              <h2>给明天的天气留言</h2>
+              <p class="aigc-module-meta">Postcard Visual System · 2026</p>
+              <p>以云层、窗户、风向与轨道为线索，把无法保存的天气变成六张可以寄出的视觉片段。</p>
+              <dl>
+                <div><dt>系统</dt><dd>明信片、网格、手写标记与孔版印刷质感</dd></div>
+                <div><dt>视觉</dt><dd>钴蓝、雾白、淡银与少量橙红</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-video-archive" class="section quote-section route-section route-project-detail">
+        <div class="section-heading reveal">
+          <p class="eyebrow">VIDEO SHOWCASE / SPECIAL PROJECT</p>
+          <h2>
+            <span>TikTok Remix</span>
+            <span>AI follow-shot</span>
+            <span>project.</span>
+          </h2>
+        </div>
+
+        <div class="remix-case reveal">
+          <article class="remix-copy">
+            <div class="remix-list">
+              <article class="remix-item" data-remix-target="origin">
+                <div class="remix-item-icon">🔵</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Background</p>
+                  <p>Remix 面向 TikTok 二创场景，把“看到视频后想跟拍”的即时灵感，转化为更低门槛、更可控的 AI 跟拍体验。</p>
+                </div>
+              </article>
+              <article class="remix-item" data-remix-target="analysis">
+                <div class="remix-item-icon">⚪️</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Goal</p>
+                  <p>让用户不依赖拍摄和剪辑能力，也能基于参考视频快速生成可发布的跟拍内容，同时提升平台二创内容的表达质量。</p>
+                </div>
+              </article>
+              <article class="remix-item" data-remix-target="result">
+                <div class="remix-item-icon">🟡</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">My Role</p>
+                  <p>负责 Remix Agent 链路设计与效果打磨，覆盖玩法定义、PE 优化、交互流程、验收标准和最终效果闭环。</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="remix-video-panel remix-video-panel-two remix-promo-panel">
+            <div class="remix-promo-layout">
+              <div class="remix-promo-copy">
+                <p class="remix-promo-kicker">External promo video</p>
+                <h3>AI follow-shot, packaged as a launch story.</h3>
+                <p>用正式宣传视频承载 Remix 的核心价值：从参考内容理解，到跟拍生成，再到可以被用户直接感知的创作结果。</p>
+              </div>
+
+              <figure class="remix-promo-media">
+                <video class="remix-media project-video" src="./media/remix/remix-promo.mp4" autoplay muted loop playsinline preload="auto"></video>
+              </figure>
+
+              <div class="remix-promo-points" aria-label="Remix project highlights">
+                <span>Reference understanding</span>
+                <span>Agent workflow</span>
+                <span>Quality review</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section video-shot-section route-section route-project-detail">
+        <div class="section-heading reveal">
+          <p class="eyebrow">VIDEO SHOWCASE / SPECIAL PROJECT</p>
+          <h2>
+            <span>TikTok AI</span>
+            <span>Vidio-shot</span>
+            <span>project.</span>
+          </h2>
+        </div>
+
+        <div class="remix-case video-shot-case reveal">
+          <article class="remix-copy">
+            <div class="remix-list">
+              <article class="remix-item">
+                <div class="remix-item-icon">🔵</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Background</p>
+                  <p>AI 爆火之后，创作不再局限于传统特效，AI 视频也迅速进入用户视野，开始成为短视频内容创作的重要方向。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">⚪️</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Growth</p>
+                  <p>我们希望用户能借助照片、换脸和视频特效能力，在 TikTok 获得更多短视频发布机会，同时做出更高爆款潜力的内容，带动更多发布与流量增长。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">🟡</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">My Role</p>
+                  <p>负责在 ComfyUI 里搭建 workflow 并调整效果、编写 system prompt 与参数调整，最终输出稳定可部署的 workflow 推进上线。</p>
+                </div>
+              </article>
+            </div>
+            <article class="remix-item remix-item-achievement">
+              <div class="remix-item-icon">🔥</div>
+              <div class="remix-item-body">
+                <p class="remix-label">Achievement</p>
+                <p>完成 TikTok 首个试点图生视频特效「空间生花」，其中 AI Flowers 2.0 作为 Seedance-1.0-mini-TT 首款视频特效，达成全球 A 级爆款，成为首个在 EU 达成 A 级的 AIGC 视频特效，东欧达到 SS 级，并带动鲜花内容规模化跟拍。</p>
+              </div>
+            </article>
+          </article>
+
+          <article class="remix-video-panel video-shot-panel">
+            <div class="video-shot-frame">
+              <div class="video-shot-upper">
+                <div class="video-shot-rail">
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/07.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-1.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-2.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-3.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-4.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/07.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-1.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-2.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-3.mp4"></video>
+                  </div>
+                  <div class="video-shot-card">
+                    <video class="project-video" autoplay muted loop playsinline preload="metadata" src="./media/video-shot/video-4.mp4"></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-effects" class="section effects-stage-section route-section route-project-detail route-effects">
+        <div class="effects-browser reveal" data-effects-browser>
+          <div class="effects-browser-tabs effects-browser-tabs-icon" aria-label="Effects categories">
+            <button class="effects-browser-tab is-active" type="button" data-effects-tab="image" aria-label="图生图">
+              <img src="./media/effects-tabs/tab-image.png" alt="" />
+            </button>
+            <button class="effects-browser-tab" type="button" data-effects-tab="doubao" aria-label="豆包">
+              <img src="./media/effects-tabs/tab-doubao.webp" alt="" />
+            </button>
+            <button class="effects-browser-tab" type="button" data-effects-tab="portrait" aria-label="人像">
+              <img src="./media/effects-tabs/tab-portrait.png" alt="" />
+            </button>
+            <button class="effects-browser-tab" type="button" data-effects-tab="fx" aria-label="特效">
+              <img src="./media/effects-tabs/tab-fx-eyelashes.png" alt="" />
+            </button>
+            <button class="effects-browser-tab" type="button" data-effects-tab="text" aria-label="图文">
+              <img src="./media/effects-tabs/tab-text.jpg" alt="" />
+            </button>
+          </div>
+
+          <div class="effects-browser-stage">
+            <section class="effects-browser-panel is-active" data-effects-panel="image">
+              <aside class="effects-panel-copy">
+                <div class="effects-info-card-list">
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔵</div>
+                    <div>
+                      <p class="effects-info-label">Background</p>
+                      <p>主要面向 TikTok 风格化特效方向，探索如何把图像风格迁移、角色化和质感化效果，包装成更适合短视频场景使用的 AI 特效玩法。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">⚪</div>
+                    <div>
+                      <p class="effects-info-label">Goal</p>
+                      <p>让风格化效果不只停留在单张图展示，而是转化成用户能快速理解、愿意用自己的照片尝试，并进一步发布到 TikTok 的特效入口。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🟡</div>
+                    <div>
+                      <p class="effects-info-label">Showcase</p>
+                      <p>这里展示的是图生图风格化样例，用来做对外展示和内部效果对齐。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔥</div>
+                    <div>
+                      <p class="effects-info-label">Achievement</p>
+                      <p>主要负责图生图 LoRA 训练与风格效果打磨，沉淀 S 级、A 级效果 10+；配合算法侧训练模型，持续优化风格稳定性与出图质感。</p>
+                    </div>
+                  </article>
+
+                </div>
+              </aside>
+              <div class="effects-roll-showcase effects-roll-showcase-pairs">
+                <div class="effects-roll-track effects-roll-track-a">
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-04.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-04.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-04.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-source-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-source-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-result-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-source-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-source-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-result-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/sesame-static-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/sesame-static-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/sesame-static-source.jpg" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/zombie-result-04.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/zombie-result-04.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/zombie-source-04.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/wood-source-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/wood-source-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/wood-result-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-source-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-source-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-result-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ghibli-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ghibli-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ghibli-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/sesame-static-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/sesame-static-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/sesame-static-source.jpg" alt="Original source image" />
+                  </figure>
+                </div>
+                <div class="effects-roll-track effects-roll-track-b">
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-source-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-source-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-result-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-04.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-04.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-04.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-05.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-05.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-05.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/sesame-street/llw-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/sesame-street/llw-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/sesame-street/llw-source.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/sesame-street/portrait-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/sesame-street/portrait-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/sesame-street/portrait-source.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/paper-source-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/paper-source-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/paper-result-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-01.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-01.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-01.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-02.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-02.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-02.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-03.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-03.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-03.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-04.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-04.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-04.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/style-pairs/ac-result-05.png" alt="" />
+                    <img class="effect-pair-result" src="./media/style-pairs/ac-result-05.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/style-pairs/ac-source-05.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/sesame-street/llw-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/sesame-street/llw-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/sesame-street/llw-source.png" alt="Original source image" />
+                  </figure>
+                  <figure class="effect-pair-card">
+                    <img class="effect-pair-bg" src="./media/sesame-street/portrait-result.png" alt="" />
+                    <img class="effect-pair-result" src="./media/sesame-street/portrait-result.png" alt="Image to image generated result" />
+                    <img class="effect-pair-source" src="./media/sesame-street/portrait-source.png" alt="Original source image" />
+                  </figure>
+                </div>
+              </div>
+              <div class="style-doodle-standalone">
+                <video src="./media/style-pairs/doodle-video.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              </div>
+            </section>
+
+            <section class="effects-browser-panel" data-effects-panel="doubao">
+              <aside class="effects-panel-copy">
+                <div class="effects-info-card-list">
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔵</div>
+                    <div>
+                      <p class="effects-info-label">Background</p>
+                      <p>围绕豆包和星绘的跨团队需求，整理更直观的视觉样例和动效片段，帮助团队更快对齐方向。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">⚪</div>
+                    <div>
+                      <p class="effects-info-label">Goal</p>
+                      <p>让复杂能力被快速理解，降低沟通成本，也帮助产品、运营和创作者更快判断使用场景。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🟡</div>
+                    <div>
+                      <p class="effects-info-label">Showcase</p>
+                      <p>这里展示的是横向需求豆包/星绘风格化样例，用来做对外展示和内部效果对齐。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔥</div>
+                    <div>
+                      <p class="effects-info-label">Achievement</p>
+                      <p>配合图生图渗透从 2% 推到 8%，同时沉淀了一批后续还能复用的视频和风格样例。</p>
+                    </div>
+                  </article>
+                </div>
+              </aside>
+              <div class="effects-roll-showcase">
+                <div class="effects-roll-track effects-roll-track-a">
+                  <figure><video src="./media/support-videos/support-video-replacement-row2-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-replacement-02.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-03.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-04.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-replacement-row2-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-replacement-02.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-03.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-04.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                </div>
+                <div class="effects-roll-track effects-roll-track-b">
+                  <figure><video src="./media/support-videos/support-video-05.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-07.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-08.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-09.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/portrait-scroll/portrait-scroll-video-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-05.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-07.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-08.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/support-videos/support-video-09.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/portrait-scroll/portrait-scroll-video-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                </div>
+              </div>
+            </section>
+
+            <section class="effects-browser-panel" data-effects-panel="portrait">
+              <aside class="effects-panel-copy">
+                <div class="effects-info-card-list">
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔵</div>
+                    <div>
+                      <p class="effects-info-label">Background</p>
+                      <p>我负责梳理人像风格方向，把真实、时尚、角色化等样例统一成可比较的视觉参考。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">⚪</div>
+                    <div>
+                      <p class="effects-info-label">Goal</p>
+                      <p>通过视觉墙把不同方向并排呈现，帮助团队快速判断哪些风格值得继续推进。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🟡</div>
+                    <div>
+                      <p class="effects-info-label">Showcase</p>
+                      <p>我挑选并整理关键样例，重点对比五官保留、服饰质感、氛围和整体吸引力。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔥</div>
+                    <div>
+                      <p class="effects-info-label">Achievement</p>
+                      <p>沉淀了可复用的人像风格参考库，为后续特效包装、模板设计和效果评估提供依据。</p>
+                    </div>
+                  </article>
+                </div>
+              </aside>
+              <div class="effects-roll-showcase">
+                <div class="effects-roll-track effects-roll-track-a">
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-01.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-02.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-03.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-04.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-05.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-01.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-02.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-03.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-04.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-05.png" alt="Portrait style result" /></figure>
+                </div>
+                <div class="effects-roll-track effects-roll-track-b">
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-06.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-07.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-08.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-09.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-10.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-06.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-07.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-08.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-09.png" alt="Portrait style result" /></figure>
+                  <figure><img src="./media/portrait-scroll/portrait-scroll-10.png" alt="Portrait style result" /></figure>
+                </div>
+              </div>
+            </section>
+
+            <section class="effects-browser-panel" data-effects-panel="fx">
+              <aside class="effects-panel-copy">
+                <div class="effects-info-card-list">
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔵</div>
+                    <div>
+                      <p class="effects-info-label">Background</p>
+                      <p>传统特效更强调实时互动、镜头反馈和用户一眼能懂的玩法表达。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">⚪</div>
+                    <div>
+                      <p class="effects-info-label">Goal</p>
+                      <p>让效果入口更轻、更直接，用户打开镜头后能马上理解怎么玩、为什么好玩。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🟡</div>
+                    <div>
+                      <p class="effects-info-label">Showcase</p>
+                      <p>这里展示的是互动特效视频，重点看动作反馈、节奏和短视频场景里的识别度。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔥</div>
+                    <div>
+                      <p class="effects-info-label">Achievement</p>
+                      <p>完成 80+ 传统特效设计与落地，其中 S / A 级特效 15+，覆盖互动玩法、贴纸与镜头表达等多类场景。</p>
+                    </div>
+                  </article>
+                </div>
+              </aside>
+              <div class="effects-roll-showcase">
+                <div class="effects-roll-track effects-roll-track-a">
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-02.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-03.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-04-how-to-find.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-05-live-bot.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-01.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-02.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-03.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-04-how-to-find.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+                  <figure><video src="./media/traditional-fx-videos/traditional-fx-05-live-bot.mp4" autoplay muted loop playsinline preload="metadata"></video></figure>
+
+                </div>
+              </div>
+            </section>
+
+            <section class="effects-browser-panel" data-effects-panel="text">
+              <aside class="effects-panel-copy">
+                <div class="effects-info-card-list">
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔵</div>
+                    <div>
+                      <p class="effects-info-label">Background</p>
+                      <p>照片上加字最怕乱，所以先把字体、颜色和排版规则整理清楚。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">⚪</div>
+                    <div>
+                      <p class="effects-info-label">Goal</p>
+                      <p>让文字模板更好看，也更方便后续直接复用。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🟡</div>
+                    <div>
+                      <p class="effects-info-label">Showcase</p>
+                      <p>这里展示的是一套文字模板规范，包括字体、颜色和装饰元素。</p>
+                    </div>
+                  </article>
+                  <article class="effects-info-card">
+                    <div class="effects-info-icon">🔥</div>
+                    <div>
+                      <p class="effects-info-label">Achievement</p>
+                      <p>沉淀了一套后续还能继续用的图文模板规范。</p>
+                    </div>
+                  </article>
+                </div>
+              </aside>
+              <div class="text-template-static-grid">
+                <figure class="text-template-tile text-template-tile-wide">
+                  <img src="./media/text-template/frame-141-text-template.png" alt="Text template visual" />
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section aigc-module-section route-section route-project-detail route-effects" aria-label="AIGC project modules">
+        <div class="aigc-module-shell">
+          <header class="aigc-module-header reveal">
+            <a class="aigc-module-back" href="#projects" aria-label="返回全部作品">
+              <span aria-hidden="true">←</span>
+              <small>ALL PROJECTS</small>
+            </a>
+            <p>AIGC / SELECTED WORK</p>
+            <h1>从模型能力到视觉体验</h1>
+            <span>我参与并推动上线的 AIGC 项目，涵盖图像风格化、视频生成、人像方向和创作平台。</span>
+            <div class="aigc-achievement-strip" aria-label="项目成果摘要">
+              <div><strong>10+</strong><small>S / A 级效果</small></div>
+              <div><strong>全球 A 级</strong><small>重点视频项目</small></div>
+              <div><strong>东欧 SS 级</strong><small>区域项目评级</small></div>
+              <div><strong>首批上线</strong><small>图生视频特效</small></div>
+            </div>
+          </header>
+
+          <article class="aigc-module-card aigc-module-system reveal">
+            <div class="aigc-module-media aigc-module-media-platform">
+              <img src="./media/workflow/ai-stylize-workflow.png" alt="AIGC 节点工作流" />
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">01 / SYSTEM</p>
+              <h2>平台与工作流</h2>
+              <p class="aigc-module-meta">Creation Platform · 2024–2026</p>
+              <p>我负责把散落的模型、素材和参数重新整理，让创作者不用研究复杂配置，也能顺利完成一次生成。</p>
+              <dl>
+                <div><dt>职责</dt><dd>流程梳理、视觉层级、平台体验</dd></div>
+                <div><dt>结果</dt><dd>从上传素材到生成结果，操作步骤更直观</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <section class="doodle-phone-demo reveal" aria-label="Doodle 特效使用流程演示">
+            <div class="doodle-demo-copy">
+              <p>HOW IT WORKS / DOODLE</p>
+              <h2>从一张照片，<br />到 Doodle 风格。</h2>
+              <span>选中 Doodle、上传一张照片，几秒后就能得到手绘版本。</span>
+              <ol>
+                <li><b>01</b> 选择 Doodle 特效</li>
+                <li><b>02</b> 上传用户原图</li>
+                <li><b>03</b> 等待生成</li>
+                <li><b>04</b> 查看风格化结果</li>
+              </ol>
+            </div>
+            <div class="doodle-phone-stage">
+              <div class="doodle-phone">
+                <div class="doodle-phone-top"><span>9:41</span><i></i><span>● ●</span></div>
+                <div class="doodle-screen doodle-screen-effect">
+                  <div class="doodle-tiktok-bar"><b>TikTok</b><span>×</span></div>
+                  <div class="doodle-effect-icon">D</div>
+                  <strong>Doodle Me</strong>
+                  <small>Turn your photo into a hand-drawn world</small>
+                  <button type="button">Use this effect</button>
+                </div>
+                <div class="doodle-screen doodle-screen-upload">
+                  <div class="doodle-tiktok-bar"><b>Doodle Me</b><span>×</span></div>
+                  <div class="doodle-upload-box"><span>＋</span><strong>Upload photo</strong></div>
+                  <button type="button">Choose from album</button>
+                </div>
+                <div class="doodle-screen doodle-screen-source">
+                  <img src="./media/doodle-demo/original.png" alt="用户上传的原图" />
+                  <div class="doodle-source-action"><span>Photo selected</span><b>Generate</b></div>
+                </div>
+                <div class="doodle-screen doodle-screen-loading">
+                  <img src="./media/doodle-demo/original.png" alt="" aria-hidden="true" />
+                  <div class="doodle-loading-mask"><i></i><strong>Creating your Doodle…</strong><small>AI effect processing</small></div>
+                </div>
+                <div class="doodle-screen doodle-screen-result">
+                  <img src="./media/doodle-demo/result.png" alt="Doodle 风格化结果" />
+                  <div class="doodle-result-bar"><span>Try another</span><b>Post</b></div>
+                </div>
+                <span class="doodle-tap"></span>
+              </div>
+              <p>自动循环演示 · 8 秒</p>
+            </div>
+          </section>
+
+          <article class="aigc-module-card aigc-module-image reveal">
+            <div class="aigc-module-media aigc-module-marquee">
+              <div class="aigc-module-track">
+                <img src="./media/style-pairs/zombie-result-01.png" alt="图生图风格化效果" />
+                <img src="./media/doodle-demo/result.png" alt="Doodle 风格化效果" />
+                <img src="./media/style-pairs/ghibli-result-01.png" alt="动画风格化效果" />
+                <img src="./media/style-pairs/sesame-static-result.png" alt="芝麻街角色效果" />
+                <img src="./media/style-pairs/ac-result-01.png" alt="角色风格化效果" />
+                <img src="./media/style-pairs/zombie-result-01.png" alt="" aria-hidden="true" />
+                <img src="./media/doodle-demo/result.png" alt="" aria-hidden="true" />
+                <img src="./media/style-pairs/ghibli-result-01.png" alt="" aria-hidden="true" />
+                <img src="./media/style-pairs/sesame-static-result.png" alt="" aria-hidden="true" />
+                <img src="./media/style-pairs/ac-result-01.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">04 / IMAGE</p>
+              <h2>图生图风格化</h2>
+              <p class="aigc-module-meta">TikTok AI Effects · 2024–2026</p>
+              <p>我从风格提案、LoRA 训练做到最终效果打磨，重点解决“像不像、稳不稳、用户愿不愿意发”。</p>
+              <dl>
+                <div><dt>职责</dt><dd>LoRA 训练、风格定义、效果打磨</dd></div>
+                <div><dt>成果</dt><dd>沉淀 S / A 级效果 10+</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <details class="aigc-expanded-library aigc-module-library reveal">
+            <summary>
+              <span>展开完整图像作品库</span>
+            </summary>
+            <div class="aigc-library-content">
+              <section class="aigc-library-group aigc-library-doodle"><header><span>01</span><h3>Doodle</h3></header><div class="aigc-library-grid"><video src="./media/style-pairs/doodle-video.mp4" autoplay muted loop playsinline></video></div></section>
+              <section class="aigc-library-group aigc-library-support"><header><span>02</span><h3>星绘 / 豆包</h3></header><div class="aigc-library-grid"><video src="./media/support-videos/support-video-replacement-umbrella-girl.mp4" autoplay muted loop playsinline></video><video src="./media/support-videos/support-video-09.mp4" autoplay muted loop playsinline></video><video src="./media/support-videos/support-video-08.mp4" autoplay muted loop playsinline></video><video src="./media/support-videos/support-video-03.mp4" autoplay muted loop playsinline></video></div></section>
+              <section class="aigc-library-group"><header><span>03</span><h3>Zombie</h3></header><div class="aigc-library-grid aigc-compare-grid"><figure class="style-compare-card"><img src="./media/style-pairs/zombie-source-01.png" alt="Zombie 原图" /><img class="style-compare-result" src="./media/style-pairs/zombie-result-01.png" alt="Zombie 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/zombie-source-02.png" alt="Zombie 原图" /><img class="style-compare-result" src="./media/style-pairs/zombie-result-02.png" alt="Zombie 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/zombie-source-03.png" alt="Zombie 原图" /><img class="style-compare-result" src="./media/style-pairs/zombie-result-03.png" alt="Zombie 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/zombie-source-04.png" alt="Zombie 原图" /><img class="style-compare-result" src="./media/style-pairs/zombie-result-04.png" alt="Zombie 效果" /></figure></div></section>
+              <section class="aigc-library-group"><header><span>04</span><h3>Wood</h3></header><div class="aigc-library-grid aigc-compare-grid"><figure class="style-compare-card"><img src="./media/style-pairs/wood-source-01.png" alt="Wood 原图" /><img class="style-compare-result" src="./media/style-pairs/wood-result-01.png" alt="Wood 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/wood-source-02.png" alt="Wood 原图" /><img class="style-compare-result" src="./media/style-pairs/wood-result-02.png" alt="Wood 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/wood-source-03.png" alt="Wood 原图" /><img class="style-compare-result" src="./media/style-pairs/wood-result-03.png" alt="Wood 效果" /></figure><figure class="style-compare-card"><img src="./media/ai-grid/wooden2-1.png" alt="Wood 原图" /><img class="style-compare-result" src="./media/ai-grid/wooden2-2.png" alt="Wood 效果" /></figure></div></section>
+              <section class="aigc-library-group"><header><span>05</span><h3>Paper</h3></header><div class="aigc-library-grid aigc-compare-grid"><figure class="style-compare-card"><img src="./media/style-pairs/paper-source-01.png" alt="Paper 原图" /><img class="style-compare-result" src="./media/style-pairs/paper-result-01.png" alt="Paper 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/paper-source-02.png" alt="Paper 原图" /><img class="style-compare-result" src="./media/style-pairs/paper-result-02.png" alt="Paper 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/paper-result-03.png" alt="Paper 原图" /><img class="style-compare-result" src="./media/style-pairs/paper-source-03.png" alt="Paper 折纸效果" /></figure></div></section>
+              <section class="aigc-library-group"><header><span>06</span><h3>Ghibli Style</h3></header><div class="aigc-library-grid aigc-compare-grid"><figure class="style-compare-card"><img src="./media/style-pairs/ghibli-source-01.png" alt="Original portrait" /><img class="style-compare-result" src="./media/style-pairs/ghibli-result-01.png" alt="Ghibli-style result" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ghibli-source-02.png" alt="Original portrait" /><img class="style-compare-result" src="./media/style-pairs/ghibli-result-02.png" alt="Ghibli-style result" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ghibli-source-03.png" alt="Original portrait" /><img class="style-compare-result" src="./media/style-pairs/ghibli-result-03.png" alt="Ghibli-style result" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ghibli-source-04.png" alt="Original portrait" /><img class="style-compare-result" src="./media/style-pairs/ghibli-result-04.png" alt="Ghibli-style result" /></figure></div></section>
+              <section class="aigc-library-group"><header><span>07</span><h3>Character</h3></header><div class="aigc-library-grid aigc-compare-grid"><figure class="style-compare-card"><img src="./media/style-pairs/ac-source-01.png" alt="Character 原图" /><img class="style-compare-result" src="./media/style-pairs/ac-result-01.png" alt="Character 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ac-source-02.png" alt="Character 原图" /><img class="style-compare-result" src="./media/style-pairs/ac-result-02.png" alt="Character 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ac-source-03.png" alt="Character 原图" /><img class="style-compare-result" src="./media/style-pairs/ac-result-03.png" alt="Character 效果" /></figure><figure class="style-compare-card"><img src="./media/style-pairs/ac-source-04.png" alt="Character 原图" /><img class="style-compare-result" src="./media/style-pairs/ac-result-04.png" alt="Character 效果" /></figure></div></section>
+              <button class="aigc-library-collapse" type="button" data-collapse-library>收起作品库 <span>↑</span></button>
+            </div>
+          </details>
+
+          <article class="aigc-module-card aigc-module-video reveal">
+            <div class="aigc-module-media aigc-module-marquee">
+              <div class="aigc-module-track aigc-module-track-reverse">
+                <video src="./media/video-shot/07.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./media/video-shot/video-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./media/video-shot/video-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./media/video-shot/video-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./media/video-shot/video-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./media/video-shot/07.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                <video src="./media/video-shot/video-1.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                <video src="./media/video-shot/video-2.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                <video src="./media/video-shot/video-3.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                <video src="./media/video-shot/video-4.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+              </div>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">03 / VIDEO</p>
+              <h2>AI 视频生成</h2>
+              <p class="aigc-module-meta">Seedance × TikTok · 2025–2026</p>
+              <p>我负责图生视频与跟拍玩法的视觉方向、效果测试和上线优化，并参与首批图生视频特效落地。</p>
+              <dl>
+                <div><dt>方法</dt><dd>创意方向、效果测试、视觉优化</dd></div>
+                <div><dt>成果</dt><dd>全球 A 级、东欧 SS 级，完成首批图生视频特效上线</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="aigc-module-card aigc-video-toolkit reveal" aria-label="AI 视频能力与工具链">
+            <div class="aigc-module-media aigc-video-toolkit-media">
+              <video src="./media/remix/remix-promo.mp4" autoplay muted loop playsinline preload="auto"></video>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">02 / VIDEO CAPABILITY</p>
+              <h2>AI 视频能力与工具链</h2>
+              <p class="aigc-module-meta">Remix Agent × TikTok · 2025–2026</p>
+              <p>上传自己的照片，再选一段参考视频，就能生成一条由“自己”出演的跟拍内容。</p>
+              <dl>
+                <div><dt>输入</dt><dd>个人 ID 素材与网络参考视频</dd></div>
+                <div><dt>跟拍</dt><dd>保持用户身份，复刻动作、镜头与节奏</dd></div>
+                <div><dt>输出</dt><dd>可预览、编辑并直接发布的本人跟拍视频</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="aigc-module-card aigc-module-portrait reveal">
+            <div class="aigc-module-media aigc-module-marquee">
+              <div class="aigc-module-track">
+                <img src="./media/portrait-scroll/portrait-scroll-01.png" alt="AI 人像风格效果" />
+                <img src="./media/portrait-scroll/portrait-scroll-02.png" alt="AI 人像风格效果" />
+                <img src="./media/portrait-scroll/portrait-scroll-04.png" alt="AI 人像风格效果" />
+                <img src="./media/portrait-scroll/portrait-scroll-06.png" alt="AI 人像风格效果" />
+                <img src="./media/portrait-scroll/portrait-scroll-08.png" alt="AI 人像风格效果" />
+                <img src="./media/portrait-scroll/portrait-scroll-01.png" alt="" aria-hidden="true" />
+                <img src="./media/portrait-scroll/portrait-scroll-02.png" alt="" aria-hidden="true" />
+                <img src="./media/portrait-scroll/portrait-scroll-04.png" alt="" aria-hidden="true" />
+                <img src="./media/portrait-scroll/portrait-scroll-06.png" alt="" aria-hidden="true" />
+                <img src="./media/portrait-scroll/portrait-scroll-08.png" alt="" aria-hidden="true" />
+              </div>
+            </div>
+            <div class="aigc-module-copy">
+              <p class="aigc-module-index">05 / PORTRAIT</p>
+              <h2>人像风格系统</h2>
+              <p class="aigc-module-meta">Portrait Direction · 2025–2026</p>
+              <p>我把真实、时尚和角色化人像放进同一套评估方式里，方便团队快速判断效果是否可用。</p>
+              <dl>
+                <div><dt>关注</dt><dd>五官保留、服饰质感、氛围一致性</dd></div>
+                <div><dt>输出</dt><dd>人像方向视觉墙与评估标准</dd></div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="projects-image-archive" class="section case-marquee-section route-section route-project-detail route-effects-archive">
+        <div class="section-heading image2image-project-heading reveal">
+          <p class="eyebrow">IMAGE TO IMAGE / SPECIAL PROJECT</p>
+          <h2>
+            <span>TikTok Image-to-image</span>
+            <span>creative</span>
+            <span>system.</span>
+          </h2>
+        </div>
+
+        <div class="image2image-showcase-only reveal">
+          <article class="case-marquee-panel image2image-library-panel">
+            <div class="image2image-library-board style-pair-board style-pair-board-grouped">
+              <div class="showcase-mini-heading">
+                <span>Style viewer</span>
+                <span>click a style to preview</span>
+              </div>
+
+              <section class="effect-viewer" data-effect-viewer aria-label="AI effect style interactive viewer">
+                <article class="effect-viewer-stage">
+                  <div class="effect-viewer-media">
+                    <img class="effect-viewer-result" data-effect-result src="./media/style-pairs/zombie-result-01.png" alt="Selected AI effect result" />
+                    <figure class="effect-viewer-source">
+                      <img data-effect-source src="./media/style-pairs/zombie-source-01.png" alt="Selected source icon" />
+                      <figcaption>Source</figcaption>
+                    </figure>
+                  </div>
+                  <div class="effect-viewer-copy">
+                    <span data-effect-kicker>3D dark character style</span>
+                    <h3 data-effect-title>Zombie Bride</h3>
+                    <p data-effect-desc>Character and scene generation with a cinematic dark-fantasy mood.</p>
+                  </div>
+                </article>
+
+                <div class="effect-viewer-thumbs" aria-label="Choose style preview">
+                  <button class="effect-thumb is-active" type="button" data-result="./media/style-pairs/zombie-result-01.png" data-source="./media/style-pairs/zombie-source-01.png" data-title="Zombie Bride" data-kicker="3D dark character style" data-desc="Character and scene generation with a cinematic dark-fantasy mood.">
+                    <img src="./media/style-pairs/zombie-result-01.png" alt="Zombie Bride preview" />
+                    <span>Zombie</span>
+                  </button>
+                  <button class="effect-thumb" type="button" data-result="./media/style-pairs/wood-result-01.png" data-source="./media/style-pairs/wood-source-01.png" data-title="Wooden Figure" data-kicker="Handmade puppet texture" data-desc="Wood-grain portrait effects with crafted character materials.">
+                    <img src="./media/style-pairs/wood-result-01.png" alt="Wooden Figure preview" />
+                    <span>Wood</span>
+                  </button>
+                  <button class="effect-thumb" type="button" data-result="./media/style-pairs/paper-result-01.png" data-source="./media/style-pairs/paper-source-01.png" data-title="Paper Craft" data-kicker="Layered paper collage" data-desc="Soft paper-cut layers for character and portrait generation.">
+                    <img src="./media/style-pairs/paper-result-01.png" alt="Paper Craft preview" />
+                    <span>Paper</span>
+                  </button>
+                  <button class="effect-thumb" type="button" data-result="./media/style-pairs/ac-result-05.png" data-source="./media/style-pairs/ac-source-05.png" data-title="Soft Game Avatar" data-kicker="Playful game character style" data-desc="A cozy avatar direction for cute, rounded game-like results.">
+                    <img src="./media/style-pairs/ac-result-05.png" alt="Soft Game Avatar preview" />
+                    <span>Game</span>
+                  </button>
+                  <button class="effect-thumb" type="button" data-result="./media/style-pairs/ghibli-result-01.png" data-source="./media/style-pairs/ghibli-source-01.png" data-title="Hand-drawn Animation" data-kicker="Warm illustrated film mood" data-desc="A softer animated look for portraits and character conversion.">
+                    <img src="./media/style-pairs/ghibli-result-01.png" alt="Hand-drawn Animation preview" />
+                    <span>Anime</span>
+                  </button>
+                  <button class="effect-thumb" type="button" data-result="./media/style-pairs/sesame-static-result.png" data-source="./media/style-pairs/sesame-static-source.jpg" data-title="Plush Character" data-kicker="Fabric puppet texture" data-desc="Tactile plush materials and friendly character expressions.">
+                    <img src="./media/style-pairs/sesame-static-result.png" alt="Plush Character preview" />
+                    <span>Plush</span>
+                  </button>
+                </div>
+              </section>
+              <div class="showcase-mini-heading showcase-mini-heading-compact">
+                <span>Doodle</span>
+                <span>矢量风格</span>
+              </div>
+              <section class="doodle-feature-card doodle-video-feature" aria-label="Doodle video showcase">
+                <video src="./media/style-pairs/doodle-video.mp4" autoplay muted loop playsinline></video>
+              </section>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section support-section route-section route-project-detail route-effects-archive">
+        <div class="section-heading reveal">
+          <p class="eyebrow">XINGHUI / DOUBAO SUPPORT</p>
+          <h2 class="support-heading-title">
+            <span class="support-heading-icons">
+              <img class="support-heading-icon-xinghui" src="./media/xinghui-icon.webp" alt="Xinghui icon" />
+              <img class="support-heading-icon-doubao" src="./media/doubao-icon.png" alt="Doubao icon" />
+            </span>
+          </h2>
+        </div>
+
+        <div class="support-layout reveal">
+          <article class="support-copy">
+            <div class="remix-list">
+              <article class="remix-item">
+                <div class="remix-item-icon">🔵</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Background</p>
+                  <p>主要面向 TikTok 风格化特效方向，探索如何把图像风格迁移、角色化和质感化效果，包装成更适合短视频场景使用的 AI 特效玩法。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">⚪️</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Goal</p>
+                  <p>让风格化效果不只停留在单张图展示，而是转化成用户能快速理解、愿意用自己的照片尝试，并进一步发布到 TikTok 的特效入口。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">🟡</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Showcase</p>
+                  <p>这里放的是豆包风格的一组效果，它是阶段里表现比较突出的方向之一，适合做对外展示和内部效果对齐。</p>
+                </div>
+              </article>
+            </div>
+            <article class="remix-item remix-item-achievement">
+              <div class="remix-item-icon">🔥</div>
+              <div class="remix-item-body">
+                <p class="remix-label">Achievement</p>
+                <p>配合图生图渗透从 2% 推到 8%，同时沉淀了一批后续还能复用的视频和风格样例。</p>
+              </div>
+            </article>
+          </article>
+
+          <article class="support-board support-video-board">
+            <div class="support-video-heading">
+              <span>Showcase</span>
+            </div>
+            <div class="support-video-marquee support-video-grid" aria-label="Doubao support video showcase">
+                <div class="support-video-column">
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-replacement-row2-01.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-replacement-02.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-03.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                </div>
+                <div class="support-video-column">
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-04.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-05.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-replacement-umbrella-girl.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                </div>
+                <div class="support-video-column">
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-07.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-08.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-09.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                </div>
+                <div class="support-video-column">
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-10.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-11.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                  <figure class="support-video-card">
+                    <video src="./media/support-videos/support-video-01.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                  </figure>
+                </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section portrait-section route-section route-project-detail route-effects-archive">
+        <div class="section-heading reveal">
+          <p class="eyebrow">PORTRAIT / STYLE SYSTEM</p>
+          <h2>
+            <span>Portrait</span>
+            <span>generation</span>
+            <span>direction.</span>
+          </h2>
+        </div>
+
+        <div class="portrait-layout reveal">
+          <article class="portrait-copy">
+            <div class="remix-list">
+              <article class="remix-item">
+                <div class="remix-item-icon">🔵</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Direction</p>
+                  <p>围绕人像主题进行风格方向调试，控制人物气质、面部稳定性与整体视觉一致性。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">⚪️</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">My Role</p>
+                  <p>负责主题效果调试、推进上线流程，并持续和组内同学同步可用的人像结果。</p>
+                </div>
+              </article>
+              <article class="remix-item">
+                <div class="remix-item-icon">🟡</div>
+                <div class="remix-item-body">
+                  <p class="remix-label">Output</p>
+                  <p>生成多组人像图，供组内测试图使用，也用于最终 icon、封面和展示图的视觉验证。</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="portrait-board portrait-scroll-board">
+            <div class="portrait-scroll-gallery" data-portrait-carousel aria-label="Portrait image scrolling showcase">
+              <div class="portrait-carousel-track">
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-01.png" alt="Portrait showcase 1" />
+                </figure>
+                <figure class="portrait-slide is-active" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-02.png" alt="Portrait showcase 2" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-03.png" alt="Portrait showcase 3" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-04.png" alt="Portrait showcase 4" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 960 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-05.png" alt="Portrait showcase 5" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 960 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-06.png" alt="Portrait showcase 6" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 960 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-07.png" alt="Portrait showcase 7" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-08.png" alt="Portrait showcase 8" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-09.png" alt="Portrait showcase 9" />
+                </figure>
+                <figure class="portrait-slide" style="--portrait-ratio: 1024 / 1280;">
+                  <img src="./media/portrait-scroll/portrait-scroll-10.png" alt="Portrait showcase 10" />
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-effects-archive" class="section traditional-fx-section route-section route-project-detail route-effects-archive">
+        <div class="traditional-editorial-shell">
+          <a class="aigc-module-back traditional-projects-back" href="#projects" aria-label="返回全部项目">
+            <span aria-hidden="true">←</span>
+            <small>ALL PROJECTS</small>
+          </a>
+          <header class="traditional-editorial-header reveal">
+            <p>TRADITIONAL EFFECTS / SELECTED WORK</p>
+            <h2>Traditional<br />Effects.</h2>
+            <span>围绕人像与镜头反馈设计实时互动效果，把视觉创意做成可以直接体验和传播的特效。</span>
+          </header>
+          <div id="traditional-effects-videos" class="traditional-editorial-grid reveal" aria-label="传统特效视频作品">
+            <figure class="traditional-editorial-media is-featured">
+              <video src="./media/traditional-fx-videos/traditional-fx-01.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption><span>01 / UNDERWATER PORTRAIT</span><small>REAL-TIME EFFECT</small></figcaption>
+            </figure>
+            <figure class="traditional-editorial-media">
+              <video src="./media/traditional-fx-videos/traditional-fx-02.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption><span>02 / FACE INTERACTION</span><small>REAL-TIME EFFECT</small></figcaption>
+            </figure>
+            <figure class="traditional-editorial-media">
+              <video src="./media/traditional-fx-videos/traditional-fx-03.640.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption><span>03 / LIVE STICKER</span><small>REAL-TIME EFFECT</small></figcaption>
+            </figure>
+            <figure class="traditional-editorial-media">
+              <video src="./media/traditional-fx-videos/traditional-fx-04-how-to-find.640.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption><span>04 / HOW TO FIND</span><small>INTERACTIVE EFFECT</small></figcaption>
+            </figure>
+            <figure class="traditional-editorial-media">
+              <video src="./media/traditional-fx-videos/traditional-fx-05-live-bot.640.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption><span>05 / LIVE BOT</span><small>LIVE EFFECT</small></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section guagua-feature-section route-section route-project-detail route-graphic">
+        <a class="aigc-module-back illustration-projects-back" href="#projects" aria-label="Back to all projects">
+          <span aria-hidden="true">←</span>
+          <small>ALL PROJECTS</small>
+        </a>
+        <div class="section-heading guagua-feature-section-heading reveal">
+          <p class="eyebrow">ILLUSTRATION / SELECTED WORK</p>
+          <h2>Illustration Works</h2>
+          <p class="guagua-feature-intro">Course scenes, character design and visual worlds created for long-term children’s learning experiences.</p>
+        </div>
+
+        <div class="guagua-feature-panel reveal">
+          <div class="guagua-feature-marquee" aria-label="瓜瓜龙课程视觉滚动展示">
+            <div class="guagua-feature-track guagua-feature-track-a">
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-01.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-02.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-03.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-04.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-06.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-07.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-01.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-02.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-03.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-04.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-06.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-07.png" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+            </div>
+            <div class="guagua-feature-track guagua-feature-track-b">
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-08.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-09.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-10.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-11.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-12.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-13.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-08.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-09.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-10.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-11.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card">
+                <img src="./media/guagua-feature/guagua-12.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+              <figure class="guagua-feature-card is-wide">
+                <img src="./media/guagua-feature/guagua-13.jpg" alt="瓜瓜龙课程视觉展示" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hongen-feature-section route-section route-project-detail route-video">
+        <div class="aigc-module-shell hongen-project-shell">
+          <article class="aigc-module-card hongen-project-card reveal">
+            <div class="aigc-module-media aigc-module-media-wide hongen-project-media">
+              <div class="hongen-five-grid">
+                <figure><img src="./media/hongen-showcase/hongen-03.jpg" alt="洪恩 UI 界面展示 1" /></figure>
+                <figure><img src="./media/hongen-showcase/hongen-04.jpg" alt="洪恩 UI 界面展示 2" /></figure>
+                <figure><img src="./media/hongen-showcase/hongen-05.jpg" alt="洪恩 UI 界面展示 3" /></figure>
+                <figure><img src="./media/hongen-showcase/hongen-01.jpg" alt="洪恩 UI 界面展示 4" /></figure>
+                <figure><img src="./media/hongen-showcase/hongen-02.png" alt="洪恩 UI 界面展示 5" /></figure>
+              </div>
+            </div>
+            <div class="aigc-module-copy hongen-project-copy">
+              <p class="aigc-module-index">HONGEN / STORY &amp; LITERACY</p>
+              <h2>Hongen Literacy &amp; Story.</h2>
+              <p class="aigc-module-meta">Children’s Learning Experience</p>
+              <p>儿童识字与故事学习界面设计，覆盖关卡、登录与互动场景，让内容更清楚，也更好玩。</p>
+              <dl>
+                <div><dt>负责</dt><dd>界面视觉与互动体验</dd></div>
+                <div><dt>内容</dt><dd>识字、故事与活动</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section text-template-section route-section route-project-detail route-effects-archive">
+        <div class="text-template-panel reveal">
+          <div class="text-template-title-row">
+            <div class="text-template-title">
+              <p class="eyebrow">TEXT TEMPLATE / PHOTO MODE</p>
+              <h2>
+                <span>Text</span>
+                <span>template</span>
+                <span>system.</span>
+              </h2>
+            </div>
+            <div class="text-template-summary text-template-tags" aria-label="Text template keywords">
+              <span>Clear captions</span>
+              <span>Faster styling</span>
+              <span>TikTok visual language</span>
+            </div>
+          </div>
+
+          <figure class="text-template-hero">
+            <img src="./media/text-template/frame-141-text-template.png" alt="TikTok text template visual board" />
+          </figure>
+
+          <div class="text-template-grid">
+            <article>
+              <span>01</span>
+              <h3>Build</h3>
+              <p>新增图文文字编辑页和照片模式里的文字模板入口。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Purpose</h3>
+              <p>让用户更快完成图片标注、故事讲述、歌词对应，不再只依赖手动调字体和颜色。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Standard</h3>
+              <p>识别度、普世性、品牌属性和搭配实用性，是模板体系的核心判断标准。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-team" class="section team-section route-section route-project-detail route-effects route-team">
+        <div class="section-heading reveal">
+          <p class="eyebrow">TEAM EXPERIENCE</p>
+          <h2>
+            <span>团队经验与分享</span>
+          </h2>
+        </div>
+
+        <div class="team-showcase reveal">
+          <article class="team-video-card">
+            <div class="team-card-heading">
+              <span>Team promotion</span>
+              <p>TTAI STYLE Q1 WORK</p>
+            </div>
+            <video class="project-video" src="./media/team-share/ttai-style-q1-work.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          </article>
+
+          <div class="team-copy-stack">
+            <article class="team-copy-card">
+              <span>Contribution</span>
+              <h3>把团队经验整理成可复用的方法。</h3>
+              <p>围绕地区文化偏好、AI 创作体验和效果侧规划，把调研、审美判断与上线标准沉淀成团队可共享的参考内容。</p>
+            </article>
+            <article class="team-copy-card">
+              <span>Sharing</span>
+              <h3>让跨项目协作更容易对齐。</h3>
+              <p>通过内部分享和宣发展示，把项目亮点、视觉方向和效果规范讲清楚，帮助团队更快理解项目重点并推进落地。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-resource-grid reveal">
+          <figure class="team-resource-card">
+            <img src="./media/team-share/culture-preference.png" alt="Regional culture preference research" />
+            <figcaption>
+              <span>Culture Preference Research</span>
+              <small>地区 / 文化的偏好研究，支持效果侧创意规划。</small>
+            </figcaption>
+          </figure>
+          <figure class="team-resource-card">
+            <img src="./media/team-share/ai-creation-experience.png" alt="AI creation experience sharing" />
+            <figcaption>
+              <span>AI Creation Experience</span>
+              <small>提升原创 AI 创作体验，沉淀工具、模特库与上线规范。</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section route-section route-contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CONTACT</p>
+          <h2>
+            <span>Let the page</span>
+            <span>open the</span>
+            <span>conversation.</span>
+          </h2>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-links">
+            <button class="copy-link copy-link-pink" type="button" data-copy="15510335695" data-default-label="Phone / WeChat 15510335695" data-copy-hint="Copy" data-copied-hint="Copied" aria-label="Copy phone and WeChat number">Phone / WeChat 15510335695</button>
+            <button class="copy-link copy-link-yellow" type="button" data-copy="347867891@qq.com" data-default-label="Email 347867891@qq.com" data-copy-hint="Copy" data-copied-hint="Copied" aria-label="Copy email address">Email 347867891@qq.com</button>
+            <button class="copy-link copy-link-red" type="button" data-copy="5566820621" data-default-label="RED / 小红书 5566820621" data-copy-hint="Copy" data-copied-hint="Copied" aria-label="复制小红书账号">RED / 小红书 5566820621</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+<script id="portfolio-handwritten-headline-fix">
+(() => {
+  const compact = (value) => (value || '').replace(/\s+/g, '');
+  const smallestMatch = (text) => {
+    const needle = compact(text);
+    return [...document.querySelectorAll('body *')]
+      .filter((element) => compact(element.textContent).includes(needle))
+      .sort((a, b) => a.querySelectorAll('*').length - b.querySelectorAll('*').length)[0];
+  };
+
+  const applyHandwrittenHeadline = () => {
+    const headline = smallestMatch('我让画面不只被看见，也让它被玩起来');
+    const handwritingReference = smallestMatch('特效、插画、界面');
+    if (!headline || !handwritingReference) return;
+
+    const referenceStyle = getComputedStyle(handwritingReference);
+    headline.style.setProperty('font-family', referenceStyle.fontFamily, 'important');
+    headline.style.setProperty('font-weight', '400', 'important');
+    headline.style.setProperty('font-style', referenceStyle.fontStyle, 'important');
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyHandwrittenHeadline, { once: true });
+  } else {
+    applyHandwrittenHeadline();
+  }
+})();
+</script>
+</body>
+</html>

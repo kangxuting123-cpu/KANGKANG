@@ -1,0 +1,5 @@
+/* A chosen photo becomes a true full-color preview. */
+.onboarding.has-upload .upload-card img{filter:none!important;opacity:1!important;transform:none!important}
+.onboarding.has-upload .upload-card>span{opacity:0;pointer-events:none}
+.onboarding.has-upload .upload-card{border-color:#888;background:#fff}
+.onboarding.has-upload.is-scanned .upload-card img{filter:none!important;opacity:1!important}

@@ -1,0 +1,8 @@
+/* Illustration detail page only */
+body[data-view="project-detail"][data-project-category="graphic"],
+body[data-view="project-detail"][data-project-category="graphic"] main,
+body[data-view="project-detail"][data-project-category="graphic"] .site-main,
+body[data-view="project-detail"][data-project-category="graphic"] .route-graphic,
+body[data-view="project-detail"][data-project-category="graphic"] .route-graphic > * {
+  background-color: rgb(180, 228, 255) !important;
+}

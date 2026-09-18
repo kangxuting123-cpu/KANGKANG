@@ -21,36 +21,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Mirror portfolio
+      - name: Check out current portfolio
+        uses: actions/checkout@v4
+      - name: Verify static site
         run: |
-          set -e
-          rm -rf mirror public
-          mkdir -p public
-          BASE="https://kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/"
-          wget --mirror --page-requisites --convert-links --adjust-extension --no-parent \
-            --execute robots=off \
-            --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/143.0.0.0 Safari/537.36" \
-            --tries=5 --timeout=30 --waitretry=3 \
-            --directory-prefix mirror \
-            "$BASE"
-          test -f mirror/kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/index.html
-          cp -a mirror/kanggg-portfolio-2026.kangkangyyyy.chatgpt.site/. public/
-
-          # Retry empty MP4s with curl. Never publish an empty video asset.
-          while IFS= read -r -d '' file; do
-            rel="${file#public/}"
-            echo "Retrying empty video: $rel"
-            rm -f "$file"
-            curl -L --fail --retry 5 --retry-delay 3 --connect-timeout 30 --max-time 600 \
-              -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/143.0.0.0 Safari/537.36" \
-              "$BASE$rel" -o "$file"
-          done < <(find public -type f -name '*.mp4' -size 0c -print0)
-
-          if find public -type f -name '*.mp4' -size 0c | grep -q .; then
-            echo "ERROR: empty MP4 assets remain after retry"
-            find public -type f -name '*.mp4' -size 0c -print
-            exit 1
-          fi
+          test -f public/index.html
+          test -f public/music-lab/index.html
           touch public/.nojekyll
       - name: Configure Pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BatchBox — 飞书文档媒体下载</title><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./selection.css"></head><body>
+<header class="pagebar"><div class="pagebar-inner"><a class="project-back" href="../#projects-vibecoding" aria-label="返回全部项目"><span aria-hidden="true">←</span><small>ALL PROJECTS</small></a><div class="page-id"><i>02</i><span>WORK PLUGIN</span></div><b>BATCHBOX</b></div></header>
+<main><section class="intro"><p>FEISHU DOC MEDIA PLUGIN</p><h1>文档里的图，<br>一次全部下载。</h1><span>扫描飞书文档中的图片和视频，一键打包下载。</span></section>
+<section class="demo" data-doc-downloader>
+  <header class="feishu-top"><strong>飞书文档</strong><span>0702_芝麻街批量跑图结果</span><div><i>已保存</i><b>分享</b></div></header>
+  <div class="layout">
+    <article class="document">
+      <div class="doc-meta">飞书文档 · 8 张图片</div><h2>角色效果对照</h2>
+      <section class="media-grid">
+        <figure data-selectable><img src="./media/asset-06.png" alt="小狗原图"><figcaption><span>01 / 原图</span><button type="button" aria-label="选择小狗原图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-02.png" alt="小狗效果图"><figcaption><span>01 / 效果图</span><button type="button" aria-label="选择小狗效果图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-03.png" alt="女性人像原图"><figcaption><span>02 / 原图</span><button type="button" aria-label="选择女性人像原图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-01.png" alt="女性人像效果图"><figcaption><span>02 / 效果图</span><button type="button" aria-label="选择女性人像效果图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-07.png" alt="男性人像原图"><figcaption><span>03 / 原图</span><button type="button" aria-label="选择男性人像原图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-04.png" alt="男性人像效果图"><figcaption><span>03 / 效果图</span><button type="button" aria-label="选择男性人像效果图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-05.png" alt="双人原图"><figcaption><span>04 / 原图</span><button type="button" aria-label="选择双人原图">✓</button></figcaption></figure>
+        <figure data-selectable><img src="./media/asset-08.png" alt="双人效果图"><figcaption><span>04 / 效果图</span><button type="button" aria-label="选择双人效果图">✓</button></figcaption></figure>
+      </section>
+    </article>
+    <aside class="plugin">
+      <header><div><strong>BatchBox</strong><small>当前文档媒体</small></div><button type="button" data-rescan>↻</button></header>
+      <div class="found"><small>当前文档扫描完成</small><strong data-found>发现 8 张图片</strong><span data-selected>尚未选择图片</span></div>
+      <div class="quick-actions"><button type="button" data-select-all>全部选择</button><button type="button" data-clear>取消选择</button></div>
+      <div class="selection-preview" data-preview><div><span>在图片下方</span><strong>点击绿色勾选框</strong></div></div>
+      <details open><summary>下载设置</summary><label><input type="checkbox" checked> 保留原始尺寸与画质</label><label><input type="checkbox" checked> 按文档顺序自动编号</label><label><input type="checkbox" checked> 原图 / 结果图自动配对</label></details>
+      <div class="folder"><span>角色与人像参考_已选图片.zip</span><small data-folder-copy>等待选择</small></div>
+      <button class="download" type="button" data-download disabled><span data-button-copy>请选择图片</span><b>↓</b></button>
+      <div class="progress" data-progress><i></i><span>正在读取文档媒体…</span></div>
+    </aside>
+  </div><div class="toast" data-toast>ZIP 已生成</div>
+</section></main><script src="./script.js"></script></body></html>

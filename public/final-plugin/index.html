@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Final. — Feishu Design Delivery Plugin</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="page-bar"><a href="../#projects-vibecoding">← 返回项目</a><span>FINAL. / LIVE PROTOTYPE</span><i>● INTERACTIVE</i></header>
+  <main>
+    <section class="intro">
+      <p>FEISHU DESIGN DELIVERY PLUGIN</p>
+      <h1>别再问<br />“最终版是哪版？”</h1>
+      <span>把群聊里的附件整理成版本链，对比修改、钉住反馈，确认唯一最终版，再完成交付检查。</span>
+      <div><b>01 选择版本</b><b>02 拖动对比</b><b>03 确认最终版</b><b>04 打包交付</b></div>
+    </section>
+    <section class="plugin" data-final-plugin>
+      <header class="plugin-top"><div><i></i><i></i><i></i></div><span>Final · campaign_launch</span><b>FEISHU PLUGIN</b></header>
+      <div class="plugin-body">
+        <aside class="versions">
+          <div class="logo"><strong>F.</strong><span>VERSIONS</span></div>
+          <button type="button" data-version="12"><i></i><div><strong>v12</strong><small>昨天 18:24</small></div><em>已作废</em></button>
+          <button type="button" data-version="13"><i></i><div><strong>v13</strong><small>今天 10:08</small></div><em>待确认</em></button>
+          <button class="active" type="button" data-version="14"><i></i><div><strong>v14</strong><small>今天 14:32</small></div><em>最新</em></button>
+          <p>来自项目群的 18 个附件<br />已归为 3 个有效版本</p>
+        </aside>
+        <section class="review">
+          <div class="review-head"><div><small>正在查看</small><strong data-file>launch_cover_v14.png</strong></div><div><button type="button" data-compare>对比 v13</button><button class="approve" type="button" data-approve>设为最终版</button></div></div>
+          <div class="canvas" data-canvas>
+            <div class="art new"><small>NEW DROP</small><strong>MAKE<br />IT MOVE.</strong><span>09 / 16 — ONLINE</span></div>
+            <div class="art old"><small>NEW DROP</small><strong>MAKE<br />IT LOUD.</strong><span>09 / 15 — ONLINE</span></div>
+            <i class="split"><b>↔</b></i>
+            <button class="pin pin-a active" type="button" data-pin="a">1</button>
+            <button class="pin pin-b" type="button" data-pin="b">2</button>
+            <div class="note" data-note>动词换成 MOVE，和视频主题更一致。<small>Min · 已解决</small></div>
+          </div>
+          <label class="range-label"><span>v13</span><input data-range type="range" min="8" max="92" value="52" /><span>v14</span></label>
+        </section>
+        <aside class="delivery">
+          <header><small>DELIVERY CHECK</small><strong data-count>4 / 5 READY</strong></header>
+          <ul>
+            <li class="done"><i>✓</i><span>横版封面</span><b>1920×1080</b></li>
+            <li class="done"><i>✓</i><span>竖版封面</span><b>1080×1920</b></li>
+            <li class="done"><i>✓</i><span>暗色版本</span><b>PNG</b></li>
+            <li class="done"><i>✓</i><span>源文件</span><b>FIG</b></li>
+            <li class="license" data-license><i>!</i><span>字体授权</span><b>缺失</b></li>
+          </ul>
+          <button class="fix" type="button" data-fix>补充字体授权</button>
+          <div class="status"><span>当前状态</span><strong data-status>等待最终确认</strong><small data-owner>v14 · 康康上传</small></div>
+          <button class="package" type="button" data-package disabled>打包交付</button>
+        </aside>
+      </div>
+      <div class="toast" data-toast>最终版已确认</div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
