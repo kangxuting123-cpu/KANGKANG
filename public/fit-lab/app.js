@@ -1,10 +1,10 @@
 const looks=[
- {name:'After Tennis',desc:'白色背心和黑色短裤构成利落底色，适合运动或晴天散步。',img:'./assets/look-sport.jpg',top:'白色修身背心',bottom:'黑色运动短裤',shoes:'黑白薄底运动鞋'},
- {name:'Quiet Café',desc:'复古条纹上衣换一条不同下装，也能继续保持轻松的咖啡店气质。',img:'./assets/look-stripe-polo.jpg',top:'红灰条纹 Polo',bottom:'灰色棉质短裤',shoes:'棕色乐福鞋'},
- {name:'Scarf Study',desc:'米色图案 T 恤与海军蓝单品组合，适合逛店和城市漫步。',img:'./assets/look-scarf.jpg',top:'米色图案 T 恤',bottom:'海军蓝刺绣短裤',shoes:'黑色玛丽珍鞋'},
- {name:'Archive Navy',desc:'海军蓝针织与工装短裙，清冷但有细节，适合看展和约会。',img:'./assets/look-navy.jpg',top:'海军蓝针织外套',bottom:'米白工装短裙',shoes:'黑色玛丽珍鞋'},
- {name:'After Dark',desc:'波点吊带与奶油色外搭构成更柔和的夜间层次。',img:'./assets/look-polka.jpg',top:'奶油色连帽衫',bottom:'黑白波点吊带裙',shoes:'黑色长靴'},
- {name:'Sunday Stripe',desc:'黑白条纹与灰色短裤，是不费力的周末搭配。',img:'./assets/look-mono-stripe.jpg',top:'黑白条纹连帽衫',bottom:'灰色棉质短裤',shoes:'银灰运动鞋'}
+ {name:'After Tennis',desc:'白色背心和黑色短裤构成利落底色，适合运动或晴天散步。',img:'./assets/look-sport.webp',top:'白色修身背心',bottom:'黑色运动短裤',shoes:'黑白薄底运动鞋'},
+ {name:'Quiet Café',desc:'复古条纹上衣换一条不同下装，也能继续保持轻松的咖啡店气质。',img:'./assets/look-stripe-polo.webp',top:'红灰条纹 Polo',bottom:'灰色棉质短裤',shoes:'棕色乐福鞋'},
+ {name:'Scarf Study',desc:'米色图案 T 恤与海军蓝单品组合，适合逛店和城市漫步。',img:'./assets/look-scarf.webp',top:'米色图案 T 恤',bottom:'海军蓝刺绣短裤',shoes:'黑色玛丽珍鞋'},
+ {name:'Archive Navy',desc:'海军蓝针织与工装短裙，清冷但有细节，适合看展和约会。',img:'./assets/look-navy.webp',top:'海军蓝针织外套',bottom:'米白工装短裙',shoes:'黑色玛丽珍鞋'},
+ {name:'After Dark',desc:'波点吊带与奶油色外搭构成更柔和的夜间层次。',img:'./assets/look-polka.webp',top:'奶油色连帽衫',bottom:'黑白波点吊带裙',shoes:'黑色长靴'},
+ {name:'Sunday Stripe',desc:'黑白条纹与灰色短裤，是不费力的周末搭配。',img:'./assets/look-mono-stripe.webp',top:'黑白条纹连帽衫',bottom:'灰色棉质短裤',shoes:'银灰运动鞋'}
 ];
 const root=document.querySelector('[data-stylist]'),topImage=root.querySelector('[data-model-top]'),bottomImage=root.querySelector('[data-model-bottom]');let topIndex=1,bottomIndex=1,mixCount=1;const $=s=>root.querySelector(s),$$=s=>[...root.querySelectorAll(s)];
 function updateMix(){const top=looks[topIndex],bottom=looks[bottomIndex];$('[data-item-top]').textContent=top.top;$('[data-item-bottom]').textContent=bottom.bottom;$('[data-item-shoes]').textContent=bottom.shoes;$('[data-look-number]').textContent=`MIX ${String(mixCount++).padStart(2,'0')}`;$('[data-look-name]').textContent=topIndex===bottomIndex?top.name:'Your Own Mix';$('[data-look-description]').textContent=`保留${top.top}，搭配${bottom.bottom}；AI 建议再穿${bottom.shoes}。`}

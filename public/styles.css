@@ -3419,10 +3419,10 @@ blockquote span {
 }
 
 
-.project-icon-grid-scroll .project-image-card img[src$="bg-image.png"],
-.project-icon-grid-scroll .project-image-card img[src$="ghibli-4433.png"],
-.project-icon-grid-scroll .project-image-card img[src$="image-2.png"],
-.project-icon-grid-scroll .project-image-card img[src$="stacked-22.png"] {
+.project-icon-grid-scroll .project-image-card img[src$="bg-image.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="ghibli-4433.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="image-2.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="stacked-22.webp"] {
   object-fit: cover;
   transform: none;
 }
@@ -3625,10 +3625,10 @@ blockquote span {
 
 
 .project-icon-grid-scroll .project-image-card img,
-.project-icon-grid-scroll .project-image-card img[src$="bg-image.png"],
-.project-icon-grid-scroll .project-image-card img[src$="ghibli-4433.png"],
-.project-icon-grid-scroll .project-image-card img[src$="image-2.png"],
-.project-icon-grid-scroll .project-image-card img[src$="stacked-22.png"] {
+.project-icon-grid-scroll .project-image-card img[src$="bg-image.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="ghibli-4433.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="image-2.webp"],
+.project-icon-grid-scroll .project-image-card img[src$="stacked-22.webp"] {
   object-fit: cover;
   transform: none;
 }
@@ -14973,12 +14973,12 @@ body[data-view="home"] .home-intro-links a:hover {
     top: 15px !important;
   }
 
-  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.png"]) .effect-pair-result,
-  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.png"]) .effect-pair-bg {
+  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.webp"]) .effect-pair-result,
+  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.webp"]) .effect-pair-bg {
     object-position: 58% center !important;
   }
 
-  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.png"]) .effect-pair-source {
+  .effects-browser-panel[data-effects-panel="image"] .effect-pair-card:has(img[src$="ac-result-05.webp"]) .effect-pair-source {
     left: clamp(18px, 1.15vw, 24px) !important;
   }
 }
@@ -19055,7 +19055,7 @@ body[data-view="home"] .home-intro-note{margin-top:0 !important;font-size:clamp(
 
 /* FIT LAB portfolio cover — the playable product lives on its own route. */
 .fitlab-cover{position:relative;display:block;min-height:650px;margin:18px;overflow:hidden;border:1px solid #2a2927;border-radius:22px;background:#d9d4ca;color:#171717;text-decoration:none}
-.fitlab-cover:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.05) 48%),url('./fit-lab/assets/outfit-sheet.png') center/cover no-repeat;filter:saturate(.62) contrast(.98);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
+.fitlab-cover:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.05) 48%),url('./fit-lab/assets/outfit-sheet.webp') center/cover no-repeat;filter:saturate(.62) contrast(.98);transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s}
 .fitlab-cover:after{content:"WARDROBE / AI STYLIST";position:absolute;left:28px;top:28px;padding:9px 12px;border:1px solid rgba(23,23,23,.35);background:rgba(244,242,237,.8);backdrop-filter:blur(10px);font:600 10px/1 'DM Sans';letter-spacing:.13em}
 .fitlab-cover-image{display:none}.fitlab-cover-ui{position:absolute;z-index:2;left:28px;top:112px;display:flex;flex-direction:column;align-items:flex-start}.fitlab-cover-ui>span{font:600 10px/1 'DM Sans';letter-spacing:.14em}.fitlab-cover-ui>strong{margin:18px 0;font:500 clamp(3.2rem,4.6vw,5.8rem)/.86 'DM Sans';letter-spacing:-.07em}.fitlab-cover-ui>small{font:600 9px/1 'DM Sans';letter-spacing:.13em;color:#64615b}
 .fitlab-cover-action{position:absolute;z-index:2;left:28px;bottom:28px;display:flex;align-items:center;justify-content:space-between;width:230px;padding:18px 20px;background:#171717;color:#fff;font:600 11px/1 'DM Sans';letter-spacing:.12em}.fitlab-cover-action b{font-size:18px;font-weight:400}

@@ -55,5 +55,8 @@
     </section>
   </main>
   <script src="./script.js"></script>
+<script>
+(()=>{const videos=document.querySelectorAll('video[data-src]');const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;const io=new IntersectionObserver(entries=>entries.forEach(({target:v,isIntersecting})=>{if(isIntersecting){if(v.dataset.src){v.src=v.dataset.src;delete v.dataset.src;v.load();}if(v.autoplay&&!reduced)v.play().catch(()=>{v.controls=true;});}else v.pause();}),{rootMargin:'120px 0px',threshold:0.01});videos.forEach(v=>{v.playsInline=true;v.addEventListener('error',()=>{v.controls=true;});if(reduced)v.controls=true;io.observe(v);});})();
+</script>
 </body>
 </html>
