@@ -19265,7 +19265,13 @@ body[data-view="project-detail"][data-project-category="video"] .after-dark-sect
   left:50%!important;
   bottom:auto!important;
   top:42%!important;
-  border-width:3px!important;
+  border:0!important;
+  border-top:3px solid var(--ad-paper)!important;
+  border-radius:0!important;
+  clip-path:none!important;
+  background:
+    linear-gradient(to bottom right,transparent 48%,var(--ad-paper) 49%,var(--ad-paper) 51%,transparent 52%) left top/50% 100% no-repeat,
+    linear-gradient(to bottom left,transparent 48%,var(--ad-paper) 49%,var(--ad-paper) 51%,transparent 52%) right top/50% 100% no-repeat;
   transform:translate(-50%,-50%);
   z-index:3!important;
 }
