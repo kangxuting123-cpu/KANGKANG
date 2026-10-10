@@ -19213,3 +19213,99 @@ body[data-view="project-detail"][data-project-category="video"] .after-dark-sect
 body[data-view="project-detail"][data-project-category="video"] .after-dark-section .after-dark-card{
   margin-top:0!important;
 }
+
+/* AFTER DARK polish — clean line artwork and a consistent type rhythm. */
+.after-dark-system .ad-story-art{
+  display:grid;
+  place-items:center;
+  min-height:420px;
+  background:var(--ad-blue)!important;
+  isolation:isolate;
+}
+.after-dark-system .ad-story-art::before{
+  inset:12%!important;
+  border:1px solid rgba(242,240,233,.62)!important;
+  border-radius:50%!important;
+  opacity:1!important;
+}
+.after-dark-system .ad-story-art::after{
+  width:74px!important;
+  height:74px!important;
+  right:12%!important;
+  top:12%!important;
+  border:2px solid var(--ad-paper);
+  border-radius:50%;
+  background:var(--ad-red)!important;
+  transform:none!important;
+  z-index:1;
+}
+.after-dark-system .ad-moon-face{
+  width:210px!important;
+  height:210px!important;
+  left:50%!important;
+  top:50%!important;
+  border:1px solid rgba(242,240,233,.9)!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:translate(-50%,-50%);
+  z-index:1!important;
+}
+.after-dark-system .ad-moon-face::after{
+  width:140px!important;
+  height:140px!important;
+  left:34px!important;
+  top:34px!important;
+  border:1px solid rgba(242,240,233,.5);
+  background:transparent!important;
+}
+.after-dark-system .ad-cocktail-line{
+  width:122px!important;
+  height:84px!important;
+  right:auto!important;
+  left:50%!important;
+  bottom:auto!important;
+  top:42%!important;
+  border-width:3px!important;
+  transform:translate(-50%,-50%);
+  z-index:3!important;
+}
+.after-dark-system .ad-cocktail-line::before{left:58px!important;top:78px!important;height:82px!important;width:3px!important}
+.after-dark-system .ad-cocktail-line::after{left:18px!important;top:157px!important;width:86px!important;height:3px!important}
+.after-dark-system .ad-story-art b{left:8%!important;bottom:7%!important;font-size:clamp(1.25rem,2.7vw,2.7rem)!important;line-height:.94!important;letter-spacing:-.035em!important}
+.after-dark-system .ad-story-art i{right:9%!important;top:8%!important;font-size:34px!important}
+
+.after-dark-system .ad-kv-lockup>strong,
+.after-dark-system .ad-intro-title h2,
+.after-dark-system .ad-story-copy h3,
+.after-dark-system .ad-menu-poster strong,
+.after-dark-system .ad-menu-card h3,
+.after-dark-system .ad-poster-mini span,
+.after-dark-system .ad-ticket b{
+  letter-spacing:-.055em!important;
+}
+.after-dark-system .ad-kv-lockup>strong{line-height:.84!important}
+.after-dark-system .ad-intro-title h2{line-height:.84!important}
+.after-dark-system .ad-story-copy h3{line-height:.9!important}
+.after-dark-system .ad-menu-poster strong{line-height:.88!important}
+.after-dark-system .ad-menu-card h3{line-height:.88!important}
+.after-dark-system .ad-poster-mini span,.after-dark-system .ad-ticket b{line-height:.9!important}
+.after-dark-system .after-dark-heading,
+.after-dark-system .ad-sheet header,
+.after-dark-system .ad-sheet footer,
+.after-dark-system .ad-intro-title p,
+.after-dark-system .ad-intro-side>b,
+.after-dark-system .ad-intro-side>small,
+.after-dark-system .ad-intro-side>div span,
+.after-dark-system .ad-story-copy small,
+.after-dark-system .ad-menu-poster small,
+.after-dark-system .ad-menu-card small,
+.after-dark-system .ad-menu-card li b,
+.after-dark-system .ad-poster-mini small,
+.after-dark-system .ad-ticket small{
+  letter-spacing:.12em!important;
+  line-height:1.35!important;
+}
+.after-dark-system .ad-menu-card li span{letter-spacing:.025em!important;line-height:1.25!important}
+.after-dark-system .ad-menu-card li em{letter-spacing:.01em!important;line-height:1.35!important}
+.after-dark-system .ad-strip{letter-spacing:.065em!important;line-height:1.2!important}
+.after-dark-system .ad-pattern-wide span{letter-spacing:-.025em!important;line-height:.95!important;text-align:center;padding:0 8px}
