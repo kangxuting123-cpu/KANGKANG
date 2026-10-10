@@ -318,12 +318,14 @@ const revealActiveRoute = () => {
 const applyPortfolioRoute = (shouldScroll = false) => {
   const hash = window.location.hash || "#top";
   const categoryMatch = hash.match(/^#projects-(video|effects|effects-archive|graphic|team|vibecoding)$/);
+  const isAfterDark = hash === "#after-dark";
   const heading = document.querySelector(".projects-section .section-heading");
 
-  if (categoryMatch) {
+  if (categoryMatch || isAfterDark) {
+    const category = isAfterDark ? "video" : categoryMatch[1];
     document.body.dataset.view = "project-detail";
-    document.body.dataset.projectCategory = categoryMatch[1];
-    if (heading) heading.dataset.activeCategory = routeCategoryNames[categoryMatch[1]];
+    document.body.dataset.projectCategory = category;
+    if (heading) heading.dataset.activeCategory = routeCategoryNames[category];
   } else {
     delete document.body.dataset.projectCategory;
 
@@ -340,7 +342,9 @@ const applyPortfolioRoute = (shouldScroll = false) => {
 
   requestAnimationFrame(() => {
     revealActiveRoute();
-    if (shouldScroll) {
+    if (isAfterDark) {
+      document.querySelector("#after-dark")?.scrollIntoView({ block: "start", behavior: shouldScroll ? "smooth" : "auto" });
+    } else if (shouldScroll) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       window.scrollTo(0, 0);
